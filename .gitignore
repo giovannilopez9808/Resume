@@ -17,6 +17,8 @@ src/*.pdf
 *.fdb_latexmk
 *.synctex.gz
 *.tmp
+*.run.xml
+*.bcf
 
 ## Intermediate documents:
 *.dvi
