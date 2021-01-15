@@ -1,0 +1,282 @@
+# Profile section
+profile:
+  first_name: Giovanni Gamaliel
+  last_name: López Padilla
+  picture: https://scontent.ftrc2-1.fna.fbcdn.net/v/t1.0-9/84190819_2792580514112371_979155597486194688_o.jpg?_nc_cat=103&ccb=2&_nc_sid=09cbfe&_nc_ohc=rNp5ih2wrcYAX94pCoG&_nc_ht=scontent.ftrc2-1.fna&oh=48dc397b58bd690a866123417b77a48f&oe=602586B0 # Hosted picture
+  #picture: static/img/rodo.gif  # Local picture
+  contact:
+    address_one: Torreón, Coahuila
+    address_two:
+    phone: 871-278-37-70
+  email: giovannilopez9808@gmail.com
+  description: Soy un científico entusiasmado en el análisis de datos y su representación física. Practicante de Data Science con el desarrollo de soluciones tecnológicas con el uso de algoritmos, teorías físicas, programación, modelos matemáticos, extracción y visualización de datos. Ayudando a organizaciones civiles con herramientas computacionales.
+
+# Social section
+social:
+  website: https://rodolfoferro.xyz
+  wpforms: https://github.com/giovannilopez9808/Resume/raw/main/Document/cv_gglp.pdf
+  github: https://github.com/giovannilopez9808
+  twitter:
+  linkedin: https://www.linkedin.com/in/gamaliel-lópez-padilla
+  facebook:
+  dev:
+  medium:  
+
+# Experience section
+experience:
+  item0:
+    position: Community Leader
+    company: Codeando México
+    from: September 2019
+    to: Present
+    description: >
+      Codeando México mainly focuses on executing activities that connect society and governments, the usage of technologies and internet-based solutions for civic purposes.
+    link: http://codeandomexico.org/
+  item1:
+    position: Open Data Coordinator
+    company: LAB León / General Direction of Innovation León
+    from: July 2018
+    to: September 2019
+    description: >
+      Pushing efforts to open (and work with) data in the city. Helping the city with trainings for digital jobs, including programming courses on Python and web development.
+  item2:
+    position: AI Consultant
+    company: NULLSEC (Startup)
+    from: July 2019
+    to: September 2019
+    description: >
+      Working as an AI consultant for NULLSEC, a computer security company focused on ethical hacking. Particularly helping in the development of NullRansom, an analyzer-debugger software with the purpose of filtering TCP protocol requests, preventing preventively being targeted by malware and ransomware viruses.
+    link: http://www.nullsec.site
+  item3:
+    position: Lead ML Engineer
+    company: Omdena
+    from: May 2019
+    to: July 2019
+    description: >
+      Lead ML engineer in Omdena's collaborative tree identification challenge to prevent fire outbursts. Contributed with the models developed and the data preprocessing (we develped a Python package for it).
+    link: https://medium.com/omdena/building-ai-for-good-by-the-people-for-the-people-d98ad78b5001
+  item4:
+    position: Jr. Python Software Developer
+    company: CloudLinux
+    from: February 2019
+    to: May 2019
+    description: >
+      In charge of building automation solutions with Python. The tech stack used includes Scrapy, Luigi, requests, and MongoDB.
+  item5:
+    position: AI Research Assistant
+    company: Research Center in Mathematics (CIMAT A.C.)
+    from: February 2018
+    to: February 2019
+    description: >
+      On charge of doing research and building neural networks for computer vision problems, focused on applications and solutions for real industry issues. Deployed trained models to production.
+  reference: https://rodolfoferro.xyz/resume/
+
+# Education section
+education:
+  item1:
+    institution: Deep Learning with Pytorch
+    program: Programa proporcionado en jovian.ai
+    description: Introducción a la libreria pytorch para el uso de inteligencia artificial en imagenes
+    from: Diciembre 2020
+    to: Enero 2021
+    reference: https://jovian.ai/learn/deep-learning-with-pytorch-zero-to-gans
+  item2:
+    institution: Universidad Autónoma de Nuevo León
+    program: Licenciatura en física
+    description: Titulación en proceso con especialización en simulaciones numéricas
+    from: Agosto 2016
+    to: Diciembre 2020
+  item4:
+    institution: Universidad Nacional de Córdoba
+    program: Ecuaciones en Derivadas Parciales, desde la teoría a las aproximaciones numéricas
+    description: Curso de posgrado donde se revisaron los fundamentos de las ecuaciones diferenciales parciales y el como resolverlas haciendo uso de Julia y Python como herramientas
+    from: Agosto 2020
+    to: Diciembre 2020
+  item3:
+    institution: Qiskit Global Summer School
+    program: Escuela de verano donde se enseño como utilizar la libreria Qiskit para computo cuántico
+    description: Trabaje en un proyecto para diseñar un circuito el cual realizaba la simulación de un compuesto químico
+    from: Julio 2020
+    to: Julio 2020
+  reference: https://qiskit.org/events/summer-school/
+
+# Community section:
+community:
+  item1:
+    institution: QuantumHispano
+    program: Cofundador
+    description: Cofundador de la comunidad QuantumHispano, la cual es la encargada de la coordinación de cursos para la introducción en la computación cuántica y la divulgación de los avances científicos en esta rama de la física y computación
+    from: Agosto 2019
+    to: Presente
+    link: https://quantumhispano.org/
+  item0:
+    institution: Universidad Autónoma de Nuevo León
+    program: Talleres Estudiantiles FCFM-UANL
+    description: He impartido y coordinado cada semestre una serie de talleres para el desarrollo de los estudiantes de la universidad en ambitos extras para que el desarrollo sea el optimo, esto enseñando herramientas más avanzadas para el análisis y visualización de datos y simulaciones moleculares
+    from: Agosto 2018
+    to: Presente
+    link: https://www.facebook.com/groups/1716503418572046
+  item2:
+    institution: Facultad de Ciencias Físico-Matemáticas
+    program: Coordinación de la Asociación de Estudiantes de Física
+    description: Mexican member of the GitHub Campus Experts Program, encouraging to empower other student communities. I also serve as a mentor in different events such as Startup Weekends, hackathons, innovation events, etc.
+    from: Agosto 2017
+    to: Noviembre 2018
+    link: https://www.facebook.com/groups/193411004019887
+
+# Skills section
+tools:
+  # Consider that the following are fa icons:
+  #   https://fontawesome.com/icons?d=gallery&s=brands
+  - python
+  - git-alt
+  - slack
+  - trello
+  - markdown
+  - html5
+  - css3-alt
+  - bootstrap
+  - linux
+extra_skills:
+  - Extracción de los datos de la NASA, ESA, AERONET, DAVIS
+  - Automatización de de análisis de datos
+  - Ajuste de modelos matemáticos basado en datos experimentales
+  - Procesamiento de imagenes
+  - Inteligencia artificial
+  - Análisis de datos gubernamentales e institucionales
+
+# Talks and workshops section
+workshops:
+  item0:
+    event: TEDxUNAMLeón
+    workshop: AI in modern times, February 2020.
+    material:
+    link: https://www.ted.com/tedx/events/35293
+  item1:
+    event: PyCon Colombia 2020
+    workshop: 'Workshop – DLaaS: Building cloud-based intelligent solutions, February 2020.'
+    material: https://github.com/RodolfoFerro/PyConCo20
+    link: https://www.pycon.co/ponentes/rodolfo-ferro/
+  item2:
+    event: International Meeting on Artificial Intelligence and its Applications (RIIAA) 2.0.
+    workshop: Workshop – Deep Learning as a Service (DLaaS), August 2019.
+    material: https://github.com/RodolfoFerro/RIIAA19-DLaaS
+    link: https://riiaa.org
+  item3:
+    event: LAB León Web Dev Crash Course 2019.
+    workshop: Crash Course – Introduction to Web Development with Python and Flask, August 2019.
+    material: https://github.com/RodolfoFerro/Flask101
+    link: https://flask101.glitch.me
+  item4:
+    event: DevDay León 2019 by Hackademy.
+    workshop: Workshop – (AI) API development with Python, August 2019.
+    material: https://github.com/RodolfoFerro/PythonBaseAPI
+    link:
+  item5:
+    event: Clubes de Ciencia México 2019.
+    workshop: Workshop – Revealing the Hidden Hyperspectrum with Artificial Neurons, July 2019.
+    material: https://rodolfoferro.xyz/hyperspectrum/
+    link:
+  item6:
+    event: DevDay Mérida 2019.
+    workshop: Workshop – Artificial Intelligence with Python, July 2019.
+    material: https://github.com/RodolfoFerro/DevDayMid2019
+    link:
+  item7:
+    event: Talent Land 2019.
+    workshop: Talk – A.I. in modern times, April 2019.
+    material:
+    link: https://jaliscotalentland2019.sched.com/event/MzAs/inteligencia-artificial-en-tiempos-modernos
+  item8:
+    event: PythonDay México 2018.
+    workshop: Talk – Data Science with Python, December 2018.
+    material: https://github.com/RodolfoFerro/DataSciPy
+    link:
+  item9:
+    event: PythonDay México 2018.
+    workshop: Workshop – Machine Learning as a Service (MLaaS), November 2018.
+    material: https://github.com/RodolfoFerro/MLaaS
+    link:
+  item10:
+    event: HERE Hackathon at Technological University of Leon.
+    workshop: Mentor on the event. Talk – Integration of Technological Solutions, November 2018.
+    material: https://github.com/RodolfoFerro/HereHackathon
+    link:
+  item11:
+    event: 6th. International Conference in Software Engineering Research and Innovation (CONISOFT).
+    workshop: Workshop – Introduction to Neural Networks with Keras, October 2018.
+    material: https://github.com/RodolfoFerro/CONISOFT2018
+    link: http://conisoft.org/2018/public/
+  reference: https://rodolfoferro.xyz/resume/
+
+# Projects section
+projects:
+  item1:
+    title: TES para tu salud
+    description: Plataforma creada para dar el tiempo de exposición solar para el tratamiento de psoriasis a los pacientes tratados en el Centro Dermatologico de Pascua, Ciudad de México, actualmente sigue en uso y los pacientes que han usado esta herramienta han visto mejorias en su cuerpo.
+    link: http://tes-v1.herokuapp.com/
+    github:
+    img: tes_webpage.png
+  item9:
+    title: Comparación de tres métodos usando radiación solar para la producción de Pre-Vitamina D3 en la piel.
+    description: A partir de resultados de otros científicos y mediciones in situ del índice UV se calculo el TES al cual se debe estar una persona usando el modelo TUV, realizando así una comparación de los tres resultados distintos, esto con el objetivo de obtener cual es la mejor vía de automatizar el calculo. En proceso de publicación
+    link: https://github.com/giovannilopez9808/Posters_templates/raw/master/Articulo/VF_AFA.pdf
+    github:
+    img: vitamin_paper.png
+  item8:
+    title: Climatología del ultravioleta en una mega ciudad en transición
+    description: En base a los datos medidos por la SEDEMA en el periodo 2000-2019 de irradiancia solar, datos de ozono medidos por el satelite OMI-NASA y datos de aerosoles proporcionados por AERONET se obtuvo la tendencia de la irradiancia UV en la Ciudad de México, esto con el fin de observar cambios en la contaminación del lugar y sus efectos sobre los humanos residentes. En proceso de publicación
+    link: https://github.com/giovannilopez9808/Posters_templates/raw/master/Articulo/Analysisof_20_years_of_UV_Index_measurements_over_the_Mexico_City_Metropolitan_Area.pdf
+    github: 
+    img: trend_paper.png
+  item11:
+      title: Análisis basado en imágenes satelitales de Google Earth en el periodo 25/May/2006 al 10/Ago/2019
+      description: A partir de imagenes de Google Earth se le realizo un proceso para obtener los bordes de los objetos en ellas, para así observar zonar de cambios y peculiaridades en la zona seleccionada.
+      link: https://github.com/giovannilopez9808/Posters_templates/raw/master/Articulo/Document.pdf
+      github:
+      img: animation.gif
+  item12:
+    title: Localización de incendios en el Delta del río Paraná
+    description: Por medio de datos satelitales proporcionados por la plataforma FIRMS de la NASA y la NOA se obtiene la información sobre el número de incendios por medio de tres instrumentos satelitales Terra, Aqua y VIIRS. Basados en estos datos satelitales se creó un código en Python para procesar y contabilizar el número de incendios que afectaron la región de Rosario y zonar aledañas, en el periodo del 3 de junio al 4 de agosto 2020.
+    link: https://github.com/giovannilopez9808/Posters_templates/raw/master/Informe%20IFIR/Focos%20de%20incendio%20en%20las%20islas%20del%20Paran%C3%A1%20%20frente%20a%20Rosario%20%20(Piacentini%2C%20Ipi%C3%B1a%2C%20Lopez-Padilla%2C%20Bolmaro)%20(Piacentini).pdf
+    github:
+    img: viirs-Fire.gif
+  item2:
+    title: Estimación de los TES en la Ciudad de México 
+    description: Por medio de la definición de la dosis UVA y eritemica y el uso de datos de irradiancia de la SEDEMA se obtuvieron los tiempos de exposicion solar para todos los dias del año, minuto a minuto en el horario 8:00 hrs - 18:hrs, asi creando y presentando la plataforma TES puesta a disposición de los pacientes.
+    link: https://github.com/giovannilopez9808/Posters_templates/raw/master/2020/CNF/TES/main.pdf
+    github:
+    img: tes_poster.png
+  item3:
+    title: Análisis a parámetros atmosféricos en el área Metropolitana de Monterrey
+    description: Haciendo uso de las mediciones de PM10 realizadas por SIMA y el uso de la modificación propia del modelo SMARTS, se calcularon las diferencias relativas en este parámetro con el fin de observar las tendencias de PM10 y sus efectos sobre los humanos habitantes de esta área.
+    link: https://github.com/giovannilopez9808/Posters_templates/raw/master/2020/CNF/PM10/main.pdf
+    github:
+    img: pm_poster.png
+  item4:
+    title: Estudio de la irradiancia solar con dos modelos de transferencia radiativa y su comparación con mediciones
+    description: Haciendo el uso del modelo TUV y el modelo SMARTS, los dos escritos originalmente en el lenguaje Fortran, se analizaron las diferencias relatividas en resultados para la zona metropolitana de Monterrey con los mismos parámetros. Se modificaron los códigos fuente de los dos modelos para que leyera los valores de los parámetros a partir de una base de datos y así automatizar el cálculo de las irradiancias solares la cuales fueron analizadas con un código escrito en python.
+    link: https://github.com/giovannilopez9808/Posters_templates/raw/master/2019/CNF/Transferencia%20radiativa/main.pdf
+    github:
+    img: transferencia_poster.png
+  item5:
+    title: Análisis de las irradiancioas UVA y eritémica medidas por el sistema de monitoreo atmosférico de la Ciudad de México
+    description: Se realizó un estudio a las mediciones de irradiancia para el año 2016 haciendo uso del modelo TUV para asi obtener que tan factible es usar este modelo para precedir o recrear mediciones de irradiancia en la zona por medio del uso de parámetros atmosféricos medidos por satelites.
+    link: https://github.com/giovannilopez9808/Posters_templates/raw/master/2019/AFA/Analisis%20indice%20UV/Analisis%20de%20irradiancia.pdf
+    github:
+    img: irradiancia_poster.png
+
+# Certifications and awards section
+awards:
+  - 'Winner – #TFWorld TF 2.0 Challenge – TensorFlow at Devpost 2020'
+  - Academy and Technology – Statal Youth Prize Guanajuato 2018
+  - Quantum Computing 101 – IBM Q Certification Badge 2018
+  - 1st. Place – HDI Challenge – Talent City Hackathon 2018
+  - 1st. Place – SWITCH Hackathon 2017
+  - 1st. Place – IBM Hackapalooza – Bluehack Hackathon 2017
+  - 1st. Place – 12th. Creativity and Innovation Contest at the University of Guanajuato 2017
+  - 1st. Place – Centro Fox National Hackathon 2017
+  - 1st. Place – 6th. Creativity and Innovation Contest, DCEA-UG 2016
+  - Silver Award – SynBio Giant Jamboree – iGEM  2016
+  - 1st. Place – 4th. Creativity and Innovation Contest, DCNE-UG 2016
+  - 1st. Place – Fintech – HackBajío Hackathon 2016
