@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% extends "layout.html" %} {% block content %}
+<h1 class="display-4" style="margin-top: 40px">Información</h1>
+<div class="box-text">
+  <strong>
+    Programa para adquisición de TES, desarrollado por Gamaliel López-Padilla y
+    Dra. Adriana Ipiña, basado mediciones de radiación solar UVA e Indice UV del
+    Sistema de Monitoreo Atmosférico de la Ciudad de México. Esta plataforma es
+    una herramienta para especialistas del área Dermatológica en el tratamiento
+    de Psoriasis.
+  </strong>
+</div>
+<br /><br />
+<a class="btn btn-primary" href="{{url_for('calc')}}"
+  ><i class="fa fa-home"></i><strong> Inicio</strong></a
+>
+{% endblock%}

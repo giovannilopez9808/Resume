@@ -1,0 +1,124 @@
+{% extends "layout.html" %} {% block content %}
+<div class="box-logo">
+  <!-- <img
+    src="{{url_for('static', filename='images/TES2.png')}}"
+  /> -->
+</div>
+<div class="box-info">
+  <strong>
+    Tiempos de Exposición Solar (TES) para acumular las dosis UVA en el
+    tratamiento dermatológico de la Psoriasis. Estimaciones basadas en
+    mediciones de radiación solar UV en días de cielo despejado del Sistema de
+    Monitoreo Atmosférico (SIMAT) de la Ciudad de México.
+  </strong>
+</div>
+<br />
+<form action="/cloud" method="POST">
+  <div class="form-row">
+    <div class="box-data">
+      <label for="hour"><strong>Dosis (J/cm<sup>2</sup>)</strong></label>
+      <select id="treatment" class="form-control" name="treatment" required>
+        <br />
+        <option value="Pso1">1</option>
+        <option value="Pso1_5">1.5</option>
+        <option value="Pso2">2</option>
+        <option value="Pso3">3</option>
+      </select>
+    </div>
+    <div class="box-data">
+      <label for="hour"><strong>Hora de inicio del TES</strong></label>
+      <input
+        type="time"
+        class="form-control"
+        id="hour"
+        name="hour"
+        maxlength="2"
+        min="08:00"
+        max="17:59"
+        required
+      />
+    </div>
+    <div class="box-data">
+      <label for="date"><strong>Fecha</strong> </label>
+      <input
+        type="date"
+        class="form-control"
+        id="date"
+        name="date"
+        min="{{today}}"
+        max="2049-12-31"
+        value="{{today}}"
+        required
+      />
+    </div>
+  </div>
+  <br />
+  <div class="form-row">
+    <div class="box-phototype">
+      <p>
+        <input type="radio" id="1" name="skin" value="0" required />
+        <strong>Fototipo I</strong><br />
+        <label for="1"
+          ><img
+            class="imgphototype"
+            src="{{url_for('static', filename='images/FI4.png')}}"
+        /></label>
+      </p>
+    </div>
+    <div class="box-phototype">
+      <input type="radio" id="2" name="skin" value="1" required />
+      <strong>Fototipo II</strong><br />
+      <label for="2"
+        ><img
+          class="imgphototype"
+          src="{{url_for('static', filename='images/FII4.png')}}"
+      /></label>
+    </div>
+    <div class="box-phototype">
+      <input type="radio" id="3" name="skin" value="2" required />
+      <strong>Fototipo III</strong><br />
+      <label for="3"
+        ><img
+          class="imgphototype"
+          src="{{url_for('static', filename='images/FIII4.png')}}"
+      /></label>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="box-phototype">
+      <input type="radio" id="4" name="skin" value="3" required />
+      <strong>Fototipo IV</strong><br />
+      <label for="4"
+        ><img
+          class="imgphototype"
+          src="{{url_for('static', filename='images/FIV4.png')}}"
+      /></label>
+    </div>
+    <div class="box-phototype">
+      <input type="radio" id="5" name="skin" value="4" required />
+      <strong>Fototipo V</strong><br />
+      <label for="5"
+        ><img
+          class="imgphototype"
+          src="{{url_for('static', filename='images/FV4.png')}}"
+      /></label>
+    </div>
+    <div class="box-phototype">
+      <input type="radio" id="6" name="skin" value="5" required />
+      <strong>Fototipo VI</strong><br />
+      <label for="6"
+        ><img
+          class="imgphototype"
+          src="{{url_for('static', filename='images/FVI4.png')}}"
+      /></label>
+    </div>
+  </div>
+  <br />
+  <button class="btn btn-primary" type="submit">
+    <i class="fa fa-arrow-right"></i> <strong> Siguiente</strong>
+  </button>
+  <button class="btn btn-primary" type="reset">
+    <i class="fa fa-close"></i><strong> Borrar</strong>
+  </button>
+</form>
+{% endblock%}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+{% extends "layout.html" %} {% block content %}
+<div class="box-logo"></div>
+<div class="box-info" align="justify">
+  <strong>
+    Cuando hablamos de las condiciones de cielo nos referimos a la cantidad de
+    nubes. Los TES dependen también de la presencia de nubes, ya que estas
+    atenúan los rayos solares UV. Las Opciones representan el cielo al momento
+    de adquirir el TES:<br />
+    1. Sin nubes o escasas nubes<br />
+    2. Medio nublado o nubes abundantes<br />
+    3. Cielo completamente nublado o muy nublado.
+  </strong>
+</div>
+<form action="/recommend" method="POST">
+  <div class="form-row">
+    <div class="col-md-3 mb-1">
+      <input
+        type="hidden"
+        class="form-control"
+        id="hour"
+        name="hour"
+        value="{{info[1]}}"
+        readonly
+      />
+    </div>
+    <div class="col-md-3 mb-1">
+      <input
+        type="hidden"
+        class="form-control"
+        id="treatment"
+        name="treatment"
+        value="{{info[3]}}"
+        readonly
+      />
+    </div>
+    <div class="col-md-2 mb-1">
+      <input
+        type="hidden"
+        class="form-control"
+        id="date"
+        name="date"
+        value="{{info[0]}}"
+        readonly
+      />
+    </div>
+    <div class="col-md-2 mb-1">
+      <input
+        type="hidden"
+        class="form-control"
+        name="skin"
+        id="skin"
+        value="{{info[2]}}"
+        readonly
+      />
+    </div>
+  </div>
+  <div class="box-cloud">
+    <input type="radio" id="1" name="cloud" value="0" required />
+    <strong>Despejado (0% - 25%)</strong><br />
+    <label for="1"
+      ><img
+        class="img-cloud"
+        src="{{url_for('static', filename='images/despejado.png')}}"
+    /></label>
+    <label for="1"
+      ><img
+        class="img-cloud"
+        src="{{url_for('static', filename='images/despejado2.jpg')}}"
+    /></label>
+  </div>
+  <div class="box-cloud">
+    <input type="radio" id="2" name="cloud" value="1" />
+    <strong> Medio nublado (26% - 75%)</strong><br />
+    <label for="2"
+      ><img
+        class="img-cloud"
+        src="{{url_for('static', filename='images/Imagen5.png')}}"
+    /></label>
+    <label for="2"
+      ><img
+        class="img-cloud"
+        src="{{url_for('static', filename='images/seminublado2.jpg')}}"
+    /></label>
+  </div>
+  <div class="box-cloud">
+    <input type="radio" id="3" name="cloud" value="2" />
+    <strong>Nublado (76% - 100%)</strong><br />
+    <label for="3"
+      ><img
+        class="img-cloud"
+        src="{{url_for('static', filename='images/nublado.png')}}"
+    /></label>
+    <label for="3"
+      ><img
+        class="img-cloud"
+        src="{{url_for('static', filename='images/nublado2.jpg')}}"
+    /></label>
+  </div>
+  <br />
+  <a class="btn btn-primary" href="{{ url_for('calc') }}"
+    ><i class="fa fa-arrow-left"></i> Regresar</a
+  >
+  <button class="btn btn-primary" type="submit">
+    <i class="fa fa-arrow-right"></i> Calcular
+  </button>
+</form>
+{% endblock%}

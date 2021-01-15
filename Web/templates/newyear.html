@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% extends "layout.html" %} {% block content %}
+<div align="center">
+  <img
+    class="imglogo"
+    src="{{url_for('static',filename='images/happyyear2021.jpg')}}"
+    href="https://www.freepik.es/vectors/banner"
+  />
+</div>
+<h1 align="center">
+  <strong>
+    Nuestro equipo le desea un feliz inicio de año y le da las gracias por haber
+    confiado su salud en nuestra experiencia. </strong
+  ><br /><br />
+</h1>
+<div align="center">
+  <a class="btn btn-primary" href="{{ url_for('calc') }}"
+    ><h1><i class="fa fa-home"></i> Inicio</h1></a
+  >
+</div>
+{% endblock%}
