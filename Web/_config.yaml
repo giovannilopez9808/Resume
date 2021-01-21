@@ -241,6 +241,12 @@ projects:
     link: https://github.com/giovannilopez9808/Posters_templates/raw/master/Informe%20IFIR/Focos%20de%20incendio%20en%20las%20islas%20del%20Paran%C3%A1%20%20frente%20a%20Rosario%20%20(Piacentini%2C%20Ipi%C3%B1a%2C%20Lopez-Padilla%2C%20Bolmaro)%20(Piacentini).pdf
     github:
     img: viirs-Fire.gif
+  item22:
+    title: Creación de fractales usando el conjunto de Julia
+    description: Usando la definición del conjunto de Julia y se crearon una serie de fractales para analizar como crecen cuando se aumenta la zona de visión.
+    link:  https://github.com/giovannilopez9808/Posters_templates/raw/master/2020/CNF/TES/main.pdf
+    github:
+    img: fractal.gif
   item2:
     title: Estimación de los TES en la Ciudad de México 
     description: Por medio de la definición de la dosis UVA y eritemica y el uso de datos de irradiancia de la SEDEMA se obtuvieron los tiempos de exposicion solar para todos los dias del año, minuto a minuto en el horario 8:00 hrs - 18:hrs, asi creando y presentando la plataforma TES puesta a disposición de los pacientes.
