@@ -274,7 +274,7 @@
 \RequirePackage{xcolor}
 
 \definecolor{white}{HTML}{FFFFFF}
-\definecolor{lightgray}{HTML}{999999}
+\definecolor{lightgray}{HTML}{000000}
 \definecolor{gray}{HTML}{555555}
 \definecolor{paynegray}{HTML}{353E49}
 \definecolor{black}{HTML}{000000}
@@ -282,19 +282,19 @@
 \definecolor{coralpink}{HTML}{FF706C}
 \definecolor{bluehtml}{HTML}{5E60CE}
 
-\ifprint
+% \ifprint
   \colorlet{regulartext}{black}
   \colorlet{headerfill}{white}
   \colorlet{headertext}{black}
   \colorlet{lighttext}{gray}
   \colorlet{linktext}{lightgray}
-\else
-  \colorlet{regulartext}{black}
-  \colorlet{headerfill}{paynegray}
-  \colorlet{headertext}{white}
-  \colorlet{lighttext}{black}
-  \colorlet{linktext}{bluehtml}
-\fi
+% \else
+%   \colorlet{regulartext}{black}
+%   \colorlet{headerfill}{paynegray}
+%   \colorlet{headertext}{white}
+%   \colorlet{lighttext}{black}
+%   \colorlet{linktext}{bluehtml}
+% \fi
 
 % Hyperref
 
@@ -391,13 +391,10 @@
     \node [text=headertext, anchor=center] (name) at (box) {%
       {\Huge\regularheader\adcv@lastname\thinheader~\thinheader\adcv@firstname}%
     };%
-    % \node [text=headertext, anchor=north] at (name.south) {%
-    %   \Large\thinheader\adcv@title%
-    % };%
   \end{tikzpicture}%
 
-  %\vspace{\baselineskip}%
-
+  \vspace{-1cm}%
+  \changefontsizes{15pt}
   \ifdefined\adcv@websiteurl%
     \ifx\adcv@websiteurl\empty%
       \def\adcv@website{}%
@@ -407,12 +404,13 @@
   \else%
     \def\adcv@website{}%
   \fi%
-  \vspace{-0.5cm}
+  \textbf{\vspace{-0.5cm}
   \begin{center}
     \adcv@email \hspace{1cm}
-    \adcv@telephone
+    \adcv@telephone \hspace{1cm}
+    \adcv@website
   \end{center}
-
+  \vspace{-0.5cm}}
 }
 
 % Footer
@@ -426,14 +424,14 @@
 \def\adcv@totpages{~/~\ref{TotPages}}
 \def\adcv@page{\adcv@pagekey~\thepage\adcv@totpages}
 
-\AtBeginDocument{%
-  \pagestyle{fancy}%
-  \fancyhead{}%
-  \fancyfoot[C]{\adcv@telephone~\adcv@email}%
-  \fancyfoot[R]{\raggedleft\footnotesize\light\adcv@page}%
-  \renewcommand{\headrulewidth}{0em}%
-  \setlength\footskip{\baselineskip}%
-}
+% \AtBeginDocument{%
+%   \pagestyle{fancy}%
+%   \fancyhead{}%
+%   % \fancyfoot[C]{\adcv@telephone~\adcv@email~\adcv@website}%
+%   \fancyfoot[R]{\raggedleft\footnotesize\light\adcv@page}%
+%   \renewcommand{\headrulewidth}{0em}%
+%   \setlength\footskip{\baselineskip}%
+% }
 
 % Tables
 
