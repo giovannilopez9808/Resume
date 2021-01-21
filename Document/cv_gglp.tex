@@ -1,20 +1,21 @@
 %!TEX TS-program = xelatex
-\documentclass[a3paper,15pt]{adcv}
+\documentclass[a3paper]{adcv_color}
 \usepackage[english]{babel}
 \usepackage{multicol}
 \usepackage{scrextend}
 \setlength{\columnsep}{1cm}
 \newcommand*{\tuv}{\href{https://www2.acom.ucar.edu/modeling/tropospheric-ultraviolet-and-visible-tuv-radiation-model}{\textbf{TUV }}}
 \newcommand*{\aeronet}{\href{https://aeronet.gsfc.nasa.gov/}{\textbf{AERONET}}}
-\newcommand*{\sedema}{\href{https://www.sedema.cdmx.gob.mx/}{\textbf{SEDEMA} }}
-\newcommand*{\omi}{\href{https://aura.gsfc.nasa.gov/omi.html}{\textbf{OMI} }}
+\newcommand*{\sedema}{\href{https://www.sedema.cdmx.gob.mx/}{\textbf{SEDEMA}~}}
+\newcommand*{\omi}{\href{https://aura.gsfc.nasa.gov/omi.html}{\textbf{OMI}~}}
 
 \title{Gamaliel-Lopez CV}
-
+\pagestyle{empty}
 \adcvname{López Padilla}{Giovanni Gamaliel}{}
 \adcvemail{giovannilopez9808}{gmail}{com}
 \adcvphone{(+52) 871-278-37-70}
-\adcvdate{}
+\adcvwebsite{http://resumegglp.herokuapp.com/}{resumegglp.herokuapp.com}
+%\adcvdate{}
 
 \begin{document}
 \changefontsizes{13.5pt}
@@ -38,8 +39,7 @@ para ver como funciona en su interior, y asi ver que procedimientos o pasos se p
   Con el uso del modelo \tuv y mediciones de la columnas de ozono proporcionado por el instrumento \omi de la NASA, se creó un código en python, el cual
   consultaba los archivos HDF de \omi y creaba un archivo resultante el cual leía el modelo \tuv para así obtener los datos de irradiancia eritémica
    en la zona de Rosario, Argentina, con otro código se leían estos resultados y calculaba el tiempo de exposición solar para 
-  la producción de la pre vitamina D en el cuerpo humano,  , tomando en cuenta los límites de exposición dependiendo el fototipo. Estos resultados eran guardados dentro de un archivo csv
- \\
+  la producción de la pre vitamina D en el cuerpo humano, tomando en cuenta los límites de exposición dependiendo el fototipo.\\
 
   \begin{minipage}{0.8\linewidth}
     \textbf{Análisis en la tendencia del índica UV en la Ciudad de México en el periodo 2000-2019}\\ 
@@ -54,8 +54,7 @@ para ver como funciona en su interior, y asi ver que procedimientos o pasos se p
     
     Haciendo uso del historial de mediciones de las estaciones meteorológicas de la Secretaria del Medio Ambiente (\sedema) de la Ciudad de México,
   datos obtenidos de la red robotica de aerosoles (\aeronet) y del instrumento \omi de la NASA se realizó un estudio en la tendencia de componentes atmosféricos
-  en el periodo 2000-2019, encontrando resultados acerca de las medidas que se han tomado en la reducción de la contamimación atmosférica en la región.
-  Todo esto por medio de una serie de códigos escritos en python y fortran para el análisis estadistico y gráficas.\\
+  en el periodo 2000-2019, encontrando resultados acerca de las medidas que se han tomado en la reducción de la contamimación atmosférica en la región.\\
 
   \begin{minipage}{0.8\linewidth}
     \textbf{Localización de incendios en el Delta del río Paraná}\\
@@ -86,8 +85,7 @@ para ver como funciona en su interior, y asi ver que procedimientos o pasos se p
   A partir de las mediciones de radiación solar eritemica proporcionadas por la Secretaria del Medio Ambiente de la 
   Ciudad de México (\sedema) se calculó el tiempo de exposición solar (TES) tomando en cuenta las caracteristicas para  diferentes fototipos, diferentes fechas y condiciones de cielo.
    Para esto se realizo un código el cual realizá la lectura de las mediciones y cálculos de los TES, en conjunto a el Centro Dermatológico de Pascua 
-  se creó una plataforma llamada \textit{TES para tu salud} en donde los pacientes puedan consultar el tiempo que ellos necesitan ingresando los parámetros antes especificados. Esta plataforma fue desarrollada como una
-  página web haciendo uno de la libreria de Flask de python, código en HTML y CSS.\\
+  se creó una plataforma llamada \textit{TES para tu salud} en donde los pacientes puedan consultar el tiempo que ellos necesitan ingresando los parámetros antes especificados.\\
 
   \begin{minipage}{0.8\linewidth}
     \textbf{Análisis de las irradiancias UVA y eritémica medidas por el Sistema Monitoreo atmosférico de la Ciudad de México}\\
@@ -118,7 +116,7 @@ para ver como funciona en su interior, y asi ver que procedimientos o pasos se p
   Haciendo el uso del modelo \tuv y el
   modelo \href{https://www.nrel.gov/grid/solar-resource/smarts.html}{\textbf{SMARTS}}, los dos escritos originalmente en el lenguaje Fortran, se analizaron las diferencias relatividas en
   resultados para la zona metropolitana de Monterrey con los mismos parámetros. Se modificaron los códigos fuente de los dos modelos para que leyera los valores de los parámetros 
-  a partir de una base de datos y así automatizar el cálculo de las irradiancias solares la cuales fueron analizadas con un código escrito en python.
+  a partir de una base de datos y así automatizar el cálculo de las irradiancias solares.
   \end{multicols}
   \begin{multicols}{2}
 \section{Educación}
@@ -163,20 +161,5 @@ para ver como funciona en su interior, y asi ver que procedimientos o pasos se p
   julio 2020
 \end{flushright}
 \end{minipage}
-  % \textbf{Qubit x Qubit semestre 2}diciembre 2020
-  
-  % \textbf{Qubit x Qubit semestre 1} agosto 2020
-  
-  %  agosto 2020
-  
-  % \textbf{Qiskit Globar Summer School, IBM} julio 2020
-  
-  % \textbf{Escuela de Verano, CIMAT Merida} junio 2020
-  
-  % \textbf{Escuela Avanzada en Física, Cinvestav} julio 2019
-  
-  % \textbf{XXVII Escuela de Verano en Física, UNAM} junio 2019
-
-
 \end{multicols}
 \end{document}

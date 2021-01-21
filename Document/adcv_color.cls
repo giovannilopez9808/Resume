@@ -407,33 +407,35 @@
   \else%
     \def\adcv@website{}%
   \fi%
-  \vspace{-0.5cm}
+  \changefontsizes{15pt}
+  \vspace{-1cm}
   \begin{center}
     \adcv@email \hspace{1cm}
-    \adcv@telephone
+    \adcv@telephone \hspace{1cm}
+    \adcv@website
   \end{center}
 
 }
 
-% Footer
+% % Footer
 
-\RequirePackage{array}
-\RequirePackage{fancyhdr}
-\RequirePackage{totpages}
+% \RequirePackage{array}
+% \RequirePackage{fancyhdr}
+% \RequirePackage{totpages}
 
-\newcommand*{\adcvdate}[1]{\def\adcv@date{#1}}
+% \newcommand*{\adcvdate}[1]{\def\adcv@date{#1}}
 
-\def\adcv@totpages{~/~\ref{TotPages}}
-\def\adcv@page{\adcv@pagekey~\thepage\adcv@totpages}
+% \def\adcv@totpages{~/~\ref{TotPages}}
+% \def\adcv@page{\adcv@pagekey~\thepage\adcv@totpages}
 
-\AtBeginDocument{%
-  \pagestyle{fancy}%
-  \fancyhead{}%
-  \fancyfoot[C]{\adcv@telephone~\adcv@email}%
-  \fancyfoot[R]{\raggedleft\footnotesize\light\adcv@page}%
-  \renewcommand{\headrulewidth}{0em}%
-  \setlength\footskip{\baselineskip}%
-}
+% \AtBeginDocument{%
+%   \pagestyle{fancy}%
+%   \fancyhead{}%
+%   \fancyfoot[C]{\adcv@telephone~\adcv@email}%
+%   \fancyfoot[R]{\raggedleft\footnotesize\light\adcv@page}%
+%   \renewcommand{\headrulewidth}{0em}%
+%   \setlength\footskip{\baselineskip}%
+% }
 
 % Tables
 
