@@ -242,7 +242,7 @@
 
 % Geometry
 
-\RequirePackage[top=2cm,left=2cm,right=2cm,bottom=2cm]{geometry}
+\RequirePackage[top=3cm,left=2cm,right=2cm,bottom=2cm]{geometry}
 
 \newlength\adcv@leftcol
 \newlength\adcv@centercol
@@ -278,25 +278,13 @@
 \definecolor{gray}{HTML}{555555}
 \definecolor{paynegray}{HTML}{353E49}
 \definecolor{black}{HTML}{000000}
-% \definecolor{paynegray}{HTML}{272F38}
 \definecolor{coralpink}{HTML}{FF706C}
 \definecolor{bluehtml}{HTML}{5E60CE}
-
-% \ifprint
   \colorlet{regulartext}{black}
   \colorlet{headerfill}{white}
   \colorlet{headertext}{black}
   \colorlet{lighttext}{gray}
   \colorlet{linktext}{lightgray}
-% \else
-%   \colorlet{regulartext}{black}
-%   \colorlet{headerfill}{paynegray}
-%   \colorlet{headertext}{white}
-%   \colorlet{lighttext}{black}
-%   \colorlet{linktext}{bluehtml}
-% \fi
-
-% Hyperref
 
 \RequirePackage{hyperref}
 
@@ -374,7 +362,7 @@
 \newcommand*{\houseicon}{\includegraphics[height=0.75em]{house.pdf}}
 \newcommand*{\phoneicon}{\includegraphics[height=0.75em]{phone.pdf}}
 \newcommand*{\placeicon}{\includegraphics[height=0.75em]{place.pdf}}
-
+\vspace{1cm}
 \ifonline
   \def\adcv@address{\placeicon~\adcv@locality,~\adcv@country}
   \def\adcv@email{\envelopeicon~{\linktext\adcv@emaillocal\aticon\adcv@emaildomainsecond\doticon\adcv@emaildomaintop}}
@@ -384,15 +372,15 @@
   \def\adcv@email{\envelopeicon~\href{mailto:\adcv@emaillocal @\adcv@emaildomainsecond.\adcv@emaildomaintop}{\adcv@emaillocal @\adcv@emaildomainsecond.\adcv@emaildomaintop}}
   \def\adcv@telephone{\phoneicon~\adcv@phone}
 \fi
-
 \AtBeginDocument{%
   \begin{tikzpicture}[remember picture, overlay]%
     \node [rectangle, fill=headerfill, minimum width=\paperwidth, minimum height=5em, anchor=north] (box) at (current page.north) {};%
     \node [text=headertext, anchor=center] (name) at (box) {%
-      {\Huge\regularheader\adcv@lastname\thinheader~\thinheader\adcv@firstname}%
+      {
+         \Huge\adcv@lastname\thinheader~\thinheader\adcv@firstname
+      }%
     };%
   \end{tikzpicture}%
-
   \vspace{-1cm}%
   \changefontsizes{15pt}
   \ifdefined\adcv@websiteurl%
