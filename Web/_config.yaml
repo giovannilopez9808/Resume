@@ -2,7 +2,7 @@
 profile:
   first_name: Giovanni Gamaliel
   last_name: López Padilla
-  picture: https://scontent.ftrc2-1.fna.fbcdn.net/v/t1.0-9/84190819_2792580514112371_979155597486194688_o.jpg?_nc_cat=103&ccb=2&_nc_sid=09cbfe&_nc_ohc=rNp5ih2wrcYAX94pCoG&_nc_ht=scontent.ftrc2-1.fna&oh=48dc397b58bd690a866123417b77a48f&oe=602586B0 # Hosted picture
+  picture: static/img/image.jpg
   #picture: static/img/rodo.gif  # Local picture
   contact:
     address_one: Torreón, Coahuila
