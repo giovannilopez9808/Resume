@@ -407,7 +407,7 @@
   \else%
     \def\adcv@website{}%
   \fi%
-  \changefontsizes{15pt}
+  \changefontsizes{18pt}
   \vspace{-1cm}
   \begin{center}
     \adcv@email \hspace{1cm}
