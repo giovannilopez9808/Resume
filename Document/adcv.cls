@@ -372,34 +372,37 @@
   \def\adcv@email{\envelopeicon~\href{mailto:\adcv@emaillocal @\adcv@emaildomainsecond.\adcv@emaildomaintop}{\adcv@emaillocal @\adcv@emaildomainsecond.\adcv@emaildomaintop}}
   \def\adcv@telephone{\phoneicon~\adcv@phone}
 \fi
-\AtBeginDocument{%
-  \begin{tikzpicture}[remember picture, overlay]%
-    \node [rectangle, fill=headerfill, minimum width=\paperwidth, minimum height=5em, anchor=north] (box) at (current page.north) {};%
-    \node [text=headertext, anchor=center] (name) at (box) {%
-      {
-         \Huge\adcv@lastname\thinheader~\thinheader\adcv@firstname
-      }%
-    };%
-  \end{tikzpicture}%
-  \vspace{-1cm}%
-  \changefontsizes{15pt}
-  \ifdefined\adcv@websiteurl%
-    \ifx\adcv@websiteurl\empty%
-      \def\adcv@website{}%
-    \else%
-      \def\adcv@website{\houseicon~\href{\adcv@websiteurl}{\adcv@websitetext}}%
-    \fi%
-  \else%
-    \def\adcv@website{}%
-  \fi%
-  \textbf{\vspace{-0.5cm}
-  \begin{center}
-    \adcv@email \hspace{1cm}
-    \adcv@telephone \hspace{1cm}
-    \adcv@website
-  \end{center}
-  \vspace{-0.5cm}}
-}
+% \AtBeginDocument{%
+%   \vspace*{2cm}\\
+
+%   \changefontsizes{20pt}
+%   \begin{tikzpicture}[remember picture, overlay]%
+%     \node [rectangle, fill=headerfill, minimum width=\paperwidth, minimum height=5em, anchor=north] (box) at (current page.north) {};%
+%     \node [text=headertext, anchor=center] (name) at (box) {%
+%       {
+%          \Huge\adcv@lastname\thinheader~\thinheader\adcv@firstname
+%       }%
+%     };%
+%   \end{tikzpicture}%
+%   \vspace{-1cm}%
+%   \changefontsizes{20pt}
+%   \ifdefined\adcv@websiteurl%
+%     \ifx\adcv@websiteurl\empty%
+%       \def\adcv@website{}%
+%     \else%
+%       \def\adcv@website{\houseicon~\href{\adcv@websiteurl}{\adcv@websitetext}}%
+%     \fi%
+%   \else%
+%     \def\adcv@website{}%
+%   \fi%
+%   \textbf{\vspace{-1cm}
+%   \begin{center}
+%     \adcv@email \hspace{1cm}
+%     \adcv@telephone \hspace{1cm}
+%     \adcv@website
+%   \end{center}
+%   \vspace{-0.5cm}}
+% }
 
 % Footer
 

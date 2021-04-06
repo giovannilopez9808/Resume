@@ -1,175 +1,152 @@
 %!TEX TS-program = xelatex
-\documentclass[a3paper]{adcv}
+\documentclass[a3paper]{report}
 \usepackage[english]{babel}
 \usepackage{multicol}
 \usepackage{scrextend}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\colorlet{linktext}{lightgray}
+\usepackage[top=3cm,left=2cm,right=2cm,bottom=2cm]{geometry}
 \setlength{\columnsep}{1cm}
-\pagestyle{empty}
+\newenvironment{proyects}[2]{\begin{minipage}{0.8\linewidth}\textbf{#1}
+\end{minipage}\begin{minipage}{0.2\linewidth}
+    \begin{flushright}
+      #2
+}{\end{flushright}
+  \end{minipage}}
 \title{Gamaliel-Lopez CV}
-
-\adcvname{López Padilla}{Giovanni Gamaliel}{}
-\adcvemail{giovannilopez9808}{gmail}{com}
-\adcvphone{(+52) 871-278-37-70}
-\adcvwebsite{resumegglp.herokuapp.com}{resumegglp.herokuapp.com}
-\adcvdate{}
+\pagestyle{empty}
+\newcommand*{\envelopeicon}{\includegraphics[height=0.75em]{icons/envelope.pdf}}
+\newcommand*{\houseicon}{\includegraphics[height=0.75em]{icons/house.pdf}}
+\newcommand*{\phoneicon}{\includegraphics[height=0.75em]{icons/phone.pdf}}
+\def\@sectioncolor#1#2#3{{\addfontfeature{Color=linktext} #1#2#3}}
+\renewcommand{\section}[1]{\vspace{0.5\baselineskip}{\Large\bfseries\@sectioncolor #1}}
 
 \begin{document}
-\changefontsizes{14pt}
-Me gustan las ciencias y me gusta abordarlas desde un enfoque en el cual los problemas se puedan resolver de una manera optima mediante la implementación de la 
-informática para lograr una mejor comprensión de los fenomenos. De igual manera siento una enorme curiosidad por las cosas que me rodean por lo que a veces llego a desarmar 
-para ver como funciona en su interior, y asi ver que procedimientos o pasos se pueden mejorar.
-
-\section{Experiencia en informática}
-
-\begin{multicols}{2}
-
-  \begin{minipage}{0.8\linewidth}
-    \textbf{Estimación de los tiempos de exposición solar para la obtención de la Pre vitamina D en Rosario, Argentina}\\
-    Pendiente por publicar
-  \end{minipage}
-    \begin{minipage}{0.2\linewidth}
-      \begin{flushright}
-      \vspace{-0.8cm}
-      diciembre 2020
-      \end{flushright}
-    \end{minipage}\\
-  
-    Con el uso del modelo TUV y mediciones de la columnas de ozono proporcionado por el instrumento OMI de la NASA, se creó un código en python, el cual
-    consultaba los archivos HDF de OMI y creaba un archivo resultante el cual leía el modelo TUV para así obtener los datos de irradiancia eritémica
-     en la zona de Rosario, Argentina, con otro código se leían estos resultados y calculaba el tiempo de exposición solar para 
-    la producción de la pre vitamina D en el cuerpo humano,  , tomando en cuenta los límites de exposición dependiendo el fototipo. Estos resultados eran guardados dentro de un archivo csv\\
-  
-  \begin{minipage}{0.8\linewidth}
-    \textbf{Análisis en la tendencia del índica UV en la Ciudad de México en el periodo 2000-2019}
-  \end{minipage}
-    \begin{minipage}{0.2\linewidth}
-      \begin{flushright}
-        \vspace{-0.7cm}
-      octubre\\ 2020
-      \end{flushright}
-    \end{minipage}\\
-    
-    Haciendo uso del historial de mediciones de las estaciones meteorológicas de la Secretaria del Medio Ambiente  de la Ciudad de México,
-  datos obtenidos de la red robotica de aerosoles  y del instrumento OMI de la NASA se realizó un estudio en la tendencia de componentes atmosféricos
-  en el periodo 2000-2019, encontrando resultados acerca de las medidas que se han tomado en la reducción de la contamimación atmosférica en la región.\\
-
-  \begin{minipage}{0.8\linewidth}
-    \textbf{Localización de incendios en el Delta del río Paraná}
-  \end{minipage}  
-    \begin{minipage}{0.2\linewidth}
-      \vspace{-0.7cm}
-      \begin{flushright}
-      agosto \\2020
-      \end{flushright}
-    \end{minipage}\\
-  
-  Por medio de datos satelitales proporcionados por la plataforma FIRMS de la NASA y la NOA
-  se obtiene la información sobre el número de incendios por medio de tres instrumentos satelitales: Terra, Aqua y VIIRS. Basados en estos datos satelitales se creó un modelo
-  para procesar y contabilizar el número de incendios que afectaron la región de Rosario y zonar aledañas, en el periodo del 3 de junio al 4 de agosto 2020.\\
-
-  \begin{minipage}{0.8\linewidth}
-    \textbf{Cálculo de los tiempos de exposición solar para el tratamiendo de Psoriasis en la Ciudad de México}
-  \end{minipage}
-    \begin{minipage}{0.2\linewidth}
-      \vspace{-0.9cm}
-      \begin{flushright}
-      agosto \\2020
-      \end{flushright}
-    \end{minipage}\\
-
-  A partir de las mediciones de radiación solar eritemica proporcionadas por la Secretaria del Medio Ambiente de la 
-  Ciudad de México  se calculó el tiempo de exposición solar (TES) tomando en cuenta las caracteristicas para  diferentes fototipos, diferentes fechas y condiciones de cielo.
-   Para esto se realizo un código el cual realizá la lectura de las mediciones y cálculos de los TES, en conjunto a el Centro Dermatológico de Pascua 
-  se creó una plataforma llamada \textit{TES para tu salud} en donde los pacientes puedan consultar el tiempo que ellos necesitan ingresando los parámetros antes especificados.\\
-
-  \begin{minipage}{0.8\linewidth}
-    \textbf{Análisis de las irradiancias UVA y eritémica medidas por el Sistema Monitoreo atmosférico de la Ciudad de México}
-  \end{minipage}
-    \begin{minipage}{0.2\linewidth}
-      \vspace{-0.9cm}
-      \begin{flushright}
-      octubre \\2019
-      \end{flushright}
-    \end{minipage}\\
-
-  Con las mediciones satelitales realizadas por el instrumento OMI de la NASA, la red robotica de aerosoles 
-  se verificó que tan aproximadas estan a la realidad los resultados del modelo TUV, el cual fue modificado en su código fuente para que pudiera ser automatizado, ya que
-  originalmente solo puede correr para un día con solo una entrada de datos.\\
-
-  \begin{minipage}{0.8\linewidth}
-    \textbf{Estudio de la irradiancia solar con dos modelos de transferencia radiativa}
-  \end{minipage}
-    \begin{minipage}{0.2\linewidth}
-      \vspace{-0.9cm}
-      \begin{flushright}
-      agosto \\2019
-      \end{flushright}
-    \end{minipage}\\
-
-  Haciendo el uso del modelo TUV y el
-  modelo SMARTS, los dos escritos originalmente en el lenguaje Fortran, se analizaron las diferencias relatividas en
-  resultados para la zona metropolitana de Monterrey con los mismos parámetros. Se modificaron los códigos fuente de los dos modelos para que leyera los valores de los parámetros 
-  a partir de una base de datos y así automatizar el cálculo de las irradiancias solares.
-  \end{multicols}
-  \begin{multicols}{2}
-\section{Educación}
-
-\textbf{Licenciatura en física}, Universidad Autónoma de Nuevo León\\
-
+\changefontsizes{17.5pt}
+\vspace*{-2cm}
 \begin{center}
-  \includegraphics[scale=0.62]{qr.png}\\
-  Código QR del portafolio online\\ \url{resumegglp.herokuapp.com}
+  \Huge Giovanni Gamaliel López Padilla
 \end{center}
 
-\section{Cursos}
+\textbf{\vspace{-1cm}
+  \begin{center}
+    \envelopeicon~giovannilopez9808@gmail.com \hspace{1cm}
+    \phoneicon~(+52)871-278-3770 \hspace{1cm}
+    \houseicon~resumegglp.herokuapp.com
+  \end{center}}
 
+Me gustan las ciencias y el como puedo abordarlas desde un enfoque para resolver los problemas de una manera óptima mediante la implementación de algoritmos y obtener una mejor comprensión de los fenómenos. De igual manera siento una enorme curiosidad por los sistemas que me rodean y como es que interaccionan con otros.\\
+
+\vspace{0.5cm}
 \begin{minipage}{0.7\linewidth}
-  \textbf{Qubit x Qubit semestre 1}\\
-  \textbf{Ecuaciones en diferenciales parciales desde la teoría a las aproximaciones numéricas}\\
-  \textbf{Qiskit Globar Summer School, IBM}
+  \section{Habilidades}
+
+  \begin{minipage}{0.25\linewidth}
+    \begin{flushleft}
+      \textbf{S.O.}\\
+      \textbf{Programación}\\
+      \textbf{Librerías}\\
+      \textbf{Web}\\
+      \textbf{Idiomas}
+    \end{flushleft}
+  \end{minipage}
+  \begin{minipage}{0.78\linewidth}
+    \vspace{0.2cm}
+    \begin{flushleft}
+      Windows, MacOs, Linux (distribuciones Debian)\\
+      Python, Fortran, LaTeX, Java, Julia, C\\
+      Numpy, Matplotlib, Pandas, Scipy, Flask, Qiskit\\
+      CSS, HTML5, Javascript\\
+      Español, ingles
+    \end{flushleft}
+  \end{minipage}
 \end{minipage}
-\begin{minipage}{0.3\linewidth}
-  %\vspace{-0.cm}
+\begin{minipage}{0.29\linewidth}
+  \vspace{-1cm}
+  \section{Educación}\\
+
+  \textbf{Licenciatura en física}\\
+  Universidad Autónoma de Nuevo León
+\end{minipage}\\
+
+% \section{Cursos}\\
+
+% \begin{minipage}{0.85\linewidth}
+%   \textbf{Qubit x Qubit semestre 1 y 2}\\
+%   \textbf{Ecuaciones en diferenciales parciales desde la teoría a las aproximaciones numéricas}\\
+%   \textbf{Qiskit Globar Summer School, IBM}
+% \end{minipage}
+% \begin{minipage}{0.15\linewidth}
+%   %\vspace{-0.75cm}
+%   \begin{flushright}
+%     agosto 2020\\
+%     agosto 2020\\
+%     julio 2020
+%   \end{flushright}
+% \end{minipage}\\
+\vspace{2cm}
+
+\section{Proyectos personales}
+\begin{multicols}{2}
+  \begin{proyects}{Localización y conteo de incendios en la de Santiago, Nuevo León}{marzo 2021}
+  \end{proyects}
+  \vspace{0.1cm}
+
+  Proyecto actual\\
+
+  \begin{proyects}{Análisis de parámetros atmosféricos sobre Área Metropolitana de Monterrey en el periodo 2015-2020}{enero 2021}
+  \end{proyects}
+  \vspace{0.1cm}
+
+  En proceso de publicación\\
+
+  \begin{proyects}{Estimación de los tiempos de exposición solar para la producción de la Pre vitamina D en Rosario, Argentina}{diciembre 2020}
+  \end{proyects}
+  \vspace{0.1cm}
+
+  En proceso de publicación\\
+
+  \begin{proyects}{Análisis en la tendencia del índica UV en la Ciudad de México en el periodo 2001-2019}{octubre 2020}
+  \end{proyects}
+  \vspace{0.1cm}
+
+  En proceso de publicación\\
+
+  \vspace{0.5cm}
+
+  \begin{proyects}{Localización de incendios en el Delta del río Paraná}{agosto 2020}
+  \end{proyects}
+
+  \vspace{0.7cm}
+
+  \begin{proyects}{Cálculo de los tiempos de exposición solar para el tratamiento de Psoriasis en la Ciudad de México}{agosto 2020}
+  \end{proyects}
+
+  \vspace{0.7cm}
+
+  \begin{proyects}{Análisis de las irradiancias UVA y eritémica medidas por el Sistema Monitoreo atmosférico de la Ciudad de México}{octubre 2019}
+  \end{proyects}
+
+  \vspace{0.7cm}
+
+  \begin{proyects}{Estudio de la irradiancia solar con dos modelos de transferencia radiativa}{agosto 2019}
+  \end{proyects}
+
   \begin{flushright}
-  agosto 2020\\
-  agosto 2020\vspace{1cm}\\
-
-  julio 2020
-\end{flushright}
-\end{minipage}
-
-\section{Habilidades}
-
-\begin{minipage}{0.25\linewidth}
-  \begin{flushright}
-    \textbf{Programación}\\
-    \textbf{Librerías}\\
-    \textbf{Web}\\
-    \textbf{Idiomas}
+    \begin{minipage}{0.5\linewidth}
+      \begin{flushright}
+        \changefontsizes{20pt}
+        \textbf{Código QR que dirigé hacia el curriculum web.}
+      \end{flushright}
+    \end{minipage}
+    \begin{minipage}{0.4\linewidth}
+      \begin{figure}[H]
+        \includegraphics[scale=0.75]{qr.png}
+      \end{figure}
+    \end{minipage}
   \end{flushright}
-\end{minipage}
-\hspace{0.3cm}
-\begin{minipage}{0.75\linewidth}
-  \vspace{0.25cm}
-  Python, Fortran, LaTeX, Java, Julia\\
-  Numpy, Matplotlib, Pandas, Scipy, Flask\\
-  CSS, HTML5\\
-  Español, ingles
-\end{minipage}
-  % \textbf{Qubit x Qubit semestre 2}diciembre 2020
-  
-  % \textbf{Qubit x Qubit semestre 1} agosto 2020
-  
-  %  agosto 2020
-  
-  % \textbf{Qiskit Globar Summer School, IBM} julio 2020
-  
-  % \textbf{Escuela de Verano, CIMAT Merida} junio 2020
-  
-  % \textbf{Escuela Avanzada en Física, Cinvestav} julio 2019
-  
-  % \textbf{XXVII Escuela de Verano en Física, UNAM} junio 2019
 \end{multicols}
 \end{document}
