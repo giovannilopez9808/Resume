@@ -9,7 +9,7 @@ profile:
     address_two:
     phone: 871-278-37-70
   email: giovannilopez9808@gmail.com
-  description: Soy un científico entusiasmado en el análisis de datos y su representación física. Practicante de Data Science con el desarrollo de soluciones tecnológicas con el uso de algoritmos, teorías físicas, programación, modelos matemáticos, extracción y visualización de datos. Apoyando a organizaciones civiles con herramientas computacionales.
+  description: Soy un científico entusiasmado en el análisis de datos y su representación física. Practicante de Data Science con el desarrollo de soluciones tecnológicas haciendo uso de algoritmos, teorías físicas, programación, modelos matemáticos, extracción y visualización de datos. Apoyando a organizaciones civiles con herramientas computacionales.
 
 # Social section
 social:
@@ -89,19 +89,19 @@ education:
   item3:
     institution: Universidad Autónoma de Nuevo León
     program: Licenciatura en física
-    description: Titulación en proceso con especialización en simulaciones numéricas
+    description: Titulación en proceso con especialización en simulaciones numéricas.
     from: Agosto 2016
     to: Diciembre 2020
   item2:
     institution: Universidad Nacional de Córdoba
     program: Ecuaciones en Derivadas Parciales, desde la teoría a las aproximaciones numéricas
-    description: Curso de posgrado donde se revisaron los fundamentos de las ecuaciones diferenciales parciales y el como resolverlas haciendo uso de Julia y Python como herramientas
+    description: Curso de posgrado donde se revisaron los fundamentos de las ecuaciones diferenciales parciales y como resolverlas usando el lenguaje Julia y Python.
     from: Agosto 2020
     to: Diciembre 2020
   item1:
     institution: Qiskit Global Summer School
     program: Escuela de verano donde se enseño como utilizar la libreria Qiskit para computo cuántico
-    description: Trabaje en un proyecto para diseñar un circuito el cual realizaba la simulación de un compuesto químico
+    description: Se desarrollo un circuito el cual realizaba la simulación de un compuesto químico.
     from: Julio 2020
     to: Julio 2020
   reference: https://qiskit.org/events/summer-school/
@@ -231,13 +231,13 @@ projects:
     img: tes_webpage.png
   item9:
     title: Comparación de tres métodos usando radiación solar para la producción de Pre-Vitamina D3 en la piel.
-    description: A partir de resultados de otros científicos y mediciones in situ del índice UV se calculo el TES al cual se debe estar una persona, realizando así una comparación de los tres resultados distintos, esto con el objetivo de obtener cual es la mejor vía de automatizar el calculo.
+    description: A partir de resultados de otros científicos y mediciones in situ del índice UV se calculo el TES al cual se debe exponer una persona a la radiación solar, realizando así una comparación de los tres métodos distintos, esto con el objetivo de obtener la mejor vía de automatizar el calculo.
     link: https://github.com/giovannilopez9808/Documents/raw/master/Articulos/Vitamin_D_2020.pdf
     github:
     img: vitamin_paper.png
   item8:
     title: Climatología del ultravioleta en una mega ciudad en transición
-    description: En base a los datos medidos por la SEDEMA en el periodo 2000-2019 de irradiancia solar, datos de ozono medidos por el satelite OMI-NASA y datos de aerosoles proporcionados por AERONET se obtuvo la tendencia de la irradiancia UV en la Ciudad de México, esto con el fin de observar cambios en la contaminación del lugar y sus efectos sobre los humanos residentes.
+    description: En base a los datos medidos por la SEDEMA en el periodo 2000-2019 de irradiancia solar, datos de ozono medidos por el satelite OMI-NASA y datos de aerosoles proporcionados por AERONET se obtuvo la tendencia de la irradiancia UV en la Ciudad de México, esto con el fin de observar cambios en la contaminación del lugar y sus efectos sobre los humanos que viven en la región.
     link: https://github.com/giovannilopez9808/Documents/raw/master/Articulos/Analysisof_20_years_of_UV_Index_measurements_over_the_Mexico_City_Metropolitan_Area.pdf
     github: 
     img: trend_paper.png
