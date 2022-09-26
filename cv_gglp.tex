@@ -1,182 +1,90 @@
-%!TEX TS-program = xelatex
+%TEX TS-program = xelatex
 \documentclass[a3paper]{adcv_color}
 \usepackage[english]{babel}
 \usepackage{multicol}
 \usepackage{scrextend}
 \setlength{\columnsep}{1cm}
-\newcommand*{\tuv}{\href{https://www2.acom.ucar.edu/modeling/tropospheric-ultraviolet-and-visible-tuv-radiation-model}{\textbf{TUV }}}
-\newcommand*{\aeronet}{\href{https://aeronet.gsfc.nasa.gov/}{\textbf{AERONET}}}
-\newcommand*{\sedema}{\href{https://www.sedema.cdmx.gob.mx/}{\textbf{SEDEMA}}}
-\newcommand*{\omi}{\href{https://aura.gsfc.nasa.gov/omi.html}{\textbf{OMI}}}
 
-\title{Gamaliel-Lopez CV}
+\title{Gamaliel-Lopez-Padilla}
 \pagestyle{empty}
 \adcvname{López Padilla}{Giovanni Gamaliel}{}
 \adcvemail{giovannilopez9808}{gmail}{com}
-\adcvphone{(+52) 871-278-37-70}
-\adcvwebsite{http://resumegglp.herokuapp.com/}{resumegglp.herokuapp.com}
+%\adcvphone{}
+%\adcvwebsite{}
+%\adcvphone{(+52) 871-278-37-70}
+%\adcvwebsite{http://resumegglp.herokuapp.com/}{resumegglp.herokuapp.com}
 % \adcvdate{}
-
+\newcommand{\proyect}[3]{\begin{minipage}{1\linewidth}
+    \begin{minipage}{0.8\linewidth}
+      \textbf{#1}
+    \end{minipage}
+    \begin{minipage}{0.19\linewidth}
+      \begin{flushright}
+        \vspace{#3cm}
+        \textit{#2}
+      \end{flushright}
+    \end{minipage}\\
+  \end{minipage}
+  \vspace{0.1cm}\\
+}
 \begin{document}
-\changefontsizes{14.5pt}
-I like science and I like to approach it from an approach in which problems can be solved with the optimal implementation of IT to obtain a better understanding of the phenomena. In the same way I feel a big curiosity for the things that surround me so sometimes I get to disarm 
-to see how it works inside, and to see what procedures or steps can be improved.
-\begin{multicols}{2}
+\changefontsizes{15.5pt}
+I like science and the approaches that i can do with algorithms and code implementations to solve problems or analyze data. In the same way i have a big curiosity in the things that surround me. For these reason sometimes i disassemble or see how a framework or algorithm works inside.
+
 \section{Projects}
+\begin{multicols}{2}
 
-\begin{minipage}{0.8\linewidth}
-  \textbf{Estimate of solar exposure time for obtaining Pre Vitamin D in Rosario, Argentina}\\
-  Pending publication
-\end{minipage}
-  \begin{minipage}{0.2\linewidth}
-    \begin{flushright}
-    \vspace{-0.8cm}
-    december 2020
-    \end{flushright}
-  \end{minipage}\\
+  \proyect{\textbf{Ultraviolet Radiation Environment of a Tropical Megacity in Transition: Mexico City 2000–2019}}{August 2021}{-0.6}
+  \href{https://pubs.acs.org/doi/10.1021/acs.est.0c08515}{\textbf{Article}}
 
-  With the \tuv model and ozone column measurements provided by the instrument \omi-NASA, python code was created, which
-  I consulted the HDF files of \omi~and created a resulting file which read \tuv model for obtain the erythemal irradiance data
-   on Rosario, Argentina, with another code that read these results and calculated the solar exposure time for 
-   the production of pre-vitamin D in the human body, taking into account the exposure limits depending on the phototype.
-    These results were stored within a csv file
- \\
+  The Environment Secretary have been measuring in 13 meteorological stations since 1997. We used all the data in the period 2000-2022 to do a study about the trend of atmospheric components as suspended particles, ozone, CO, NO$_2$ and SO$_2$.\\
 
-  \begin{minipage}{0.8\linewidth}
-    \textbf{Analysis in the trend of the UV index in Mexico City in the period 2000-2019}\\ 
-    Pending publication
-  \end{minipage}
-    \begin{minipage}{0.2\linewidth}
-      \begin{flushright}
-        \vspace{-0.7cm}
-      october\\ 2020
-      \end{flushright}
-    \end{minipage}\\
-    
-    With the measurement history of the meteorological stations of the Secretary of the Environment (\sedema)~of Mexico City,
-    the data obtained from the robotic network of aerosols (\aeronet) and the NASA \omi~instrument, i do a study on the trend of atmospheric components
-     in the period 2000-2019, finding results about the measures that have been taken in the reduction of the atmospheric pollution in the region.
-     All this was calculated with python and fortran codes for statistical analysis and graphs.\\
+  \proyect{\textbf{Analysis of the UV solar irradiance for the synthesis of Pre-Vitamin D$_3$ on the skin in Rosario, Argentina}}{January 2022}{-0.8}
+  \href{https://anales.fisica.org.ar/journal/index.php/analesafa/article/view/2318}{\textbf{Article}}
 
-  \begin{minipage}{0.8\linewidth}
-    \textbf{Location of fires in the Parana River Delta}\\
-    \href{https://github.com/giovannilopez9808/Posters_templates/blob/master/Informe\%20IFIR/Focos\%20de\%20incendio\%20en\%20las\%20islas\%20del\%20Paran\%C3\%A1\%20\%20frente\%20a\%20Rosario\%20\%20(Piacentini\%2C\%20Ipi\%C3\%B1a\%2C\%20Lopez-Padilla\%2C\%20Bolmaro)\%20(Piacentini).pdf}{\textbf{Report delivered to the government of Rosario, Argentina}}
-  \end{minipage}
-    \begin{minipage}{0.2\linewidth}
-      \vspace{-0.7cm}
-      \begin{flushright}
-        august
-        \\2020
-      \end{flushright}
-    \end{minipage}\\
-  
-    Through satellite's data provided by NASA and NOA's plataform \href{https://firms.modaps.eosdis.nasa.gov/}{\textbf{FIRMS}}, i obtain information about the
-    number of fires that was measurement by three satellite's instruments: Terra, Aqua and VIIRS. Based on these satellite's data a python code was created
-    to process and count the number of fires that affected the region of Rosario and surrounding areas, in the period from June 3 to August 4, 2020.\vspace{1cm}\\
-  \begin{minipage}{0.8\linewidth}
-    \textbf{Calculation of solar exposure time for Psoriasis treatment in Mexico City}\\
-    \href{https://github.com/giovannilopez9808/Posters_templates/blob/master/2020/CNF/TES/main.pdf}{\textbf{Poster}}, \href{http://tes-v1.herokuapp.com/}{\textbf{Plataforma}}
-  \end{minipage}
-    \begin{minipage}{0.2\linewidth}
-      \vspace{-0.9cm}
-      \begin{flushright}
-      august \\2020
-      \end{flushright}
-    \end{minipage}\\
+  Few  foods  contain  vitamina  D$_3$ naturally,  the  main  source  of  obtaining  the  ultraviolet (UV) solar radiation, which triggers the synthesis on the skin’s surface. In this study, the effective UV solar irradiance for the synthesis of pre-vitamin D$_3$ was determined in Rosario city, Argentina, using three methods: Proportionality Coefficient, Herman’s equation and TUV model.\\
 
-    Based on the measurements of erythemic solar radiation provided by the Secretary of the Environment of the 
-    Mexico City (\sedema). the solar exposure time (TES) was calculated taking into account the characteristics for different phototypes, different dates and sky conditions.
-     A code was made to read the measurements and calculations of the TES, in conjunction with the Easter Dermatological Center 
-    a platform called \textit{TES para tu salud} was created where patients can consult the time they need by entering the parameters specified above. This platform was developed as a
-    web page making one of the python Flask library, HTML and CSS code.\\
+  \proyect{\textbf{Impact on air quality in the Rosario city due to grassland burning in the Delta of Paraná River}}{August 2022}{-0.6}
+  \href{https://rephip.unr.edu.ar/handle/2133/24201}{\textbf{Report}}
 
-  \begin{minipage}{0.8\linewidth}
-    \textbf{Analysis of UVA and erythemic irradiances measured by the Mexico City Atmospheric Monitoring System}\\
-    \href{https://github.com/giovannilopez9808/Posters_templates/blob/master/2019/AFA/Analisis\%20indice\%20UV/Analisis\%20de\%20irradiancia.pdf}{\textbf{Poster}}
-  \end{minipage}
-    \begin{minipage}{0.2\linewidth}
-      \vspace{-0.9cm}
-      \begin{flushright}
-      october \\2019
-      \end{flushright}
-    \end{minipage}\\
+  Through satellite's data provided by NASA and NOA's plataform. The fire alarms were measurement by the VIIRS satellite instrument. We process the number of fires that affected the region of Rosario and surrounding areas. We correlate this information with the suspended particles and the number of deaths in the same period of time.\\
 
-    With the satellite's measurements made by the NASA \omi~instrument, the Aerosol Robotic Network (\aeronet). i It was verified how close the results of the model \tuv are to reality, this model was modified in its source code so that it could be automated, because originally you can only run for one day with only one data entry.\\
+  \proyect{Cloud classification with radiacion solar measurements.}{June 2022}{0}
+  \href{https://github.com/giovannilopez9808/Cloud_classification/raw/main/Document/Main.pdf}{\textbf{Report}}
 
-  \begin{minipage}{0.8\linewidth}
-    \textbf{Study of solar irradiance with two radiative transfer models}\\
-    \href{https://github.com/giovannilopez9808/Posters_templates/tree/master/2019/CNF/Transferencia\%20radiativa}{\textbf{Poster}}
-  \end{minipage}
-    \begin{minipage}{0.2\linewidth}
-      \vspace{-0.9cm}
-      \begin{flushright}
-      august \\2019
-      \end{flushright}
-    \end{minipage}\\
+  The cloud cover is an important characteristic to any type of weather forecasting. The solar radiation is a natural detector of clouds. In recent decades, a several types of models have been developed to classify different sky types according to cloud conditions or percentage cloud cover.
 
-    Using the \tuv model and the
-    \href{https://www.nrel.gov/grid/solar-resource/smarts.html}{\textbf{SMARTS}} model, both written in the Fortran language, we analyzed the relativistic differences in
-      results for the Monterrey metropolitan area with the same parameters. The source codes of the two models were modified to read the values of the parameters 
-      from a database and this automate the calculation of solar irradiances which were analyzed with a code written in python.
-  \end{multicols}
-  \begin{multicols}{2}
+  \columnbreak
 
-\section{Hability}
+  \proyect{Estimation of solar exposure for Psoriasis treatment in Mexico city}{August 2020}{-0.2}
+  \href{https://github.com/giovannilopez9808/Documents/raw/master/Posters/2020/CNF/TES/main.pdf}{\textbf{Poster}}, \href{http://tes-v1.herokuapp.com/}{\textbf{Website}}
 
-\begin{minipage}{0.25\linewidth}
-  \begin{flushright}
-    \textbf{Programaming}\\
-    \textbf{Libraries}
-    \vspace{0.4cm}\\
-    \textbf{Hardware}\\
-    \textbf{Web}\\
-    \textbf{Languages}
-  \end{flushright}
-\end{minipage}
-\hspace{0.3cm}
-\begin{minipage}{0.75\linewidth}
-  \vspace{0.25cm}
-  Python, Fortran, LaTeX, Java, Julia\\
-  Numpy, Matplotlib, Pandas, Scipy, Flask, sqlite\\
-  Arduino\\
-  CSS, HTML5\\
-  Spanish, english
-\end{minipage}
-\vspace{2cm}\\
-\section{Education}
+  Based on the measurements of erythemal radiation provided by the Environment Secretary of Mexico City, the solar exposure time was estimated for all the different phototypes and cloud conditions. The results were communicated to the Easter Dermatological Center. The patients can consult their treatment in a website.\\
 
-\textbf{Bachelor of Science in Physics}, Universidad Autónoma de Nuevo León\\
+  \proyect{\textbf{Analysis of UVA and erythemic irradiances in Mexico City}}{October 2019}{-0.2}  \href{https://github.com/giovannilopez9808/Documents/raw/master/Posters/2019/AFA/Analisis%20indice%20UV/Analisis%20de%20irradiancia.pdf}{\textbf{Poster}}
 
-\section{Courses}
+    With the ozone measurements from OMI-NASA instrument and the AOD from AERONET, we verified the ratios from TUV model results respect the surface measurements. This results was submitted in 104 Reunión de la Asociación Física Argentina.\\
 
-\begin{minipage}{0.7\linewidth}
-  \textbf{Qubit x Qubit semestre 1}\\
-  \textbf{Partial differential equations from theory to numerical approximations}\\
-  \textbf{Qiskit Globar Summer School, IBM}
-\end{minipage}
-\begin{minipage}{0.3\linewidth}
-  %\vspace{-0.cm}
-  \begin{flushright}
-  august 2020\\
-  august 2020\vspace{1cm}\\
+    \proyect{Analysis of solar irradiance with two transfer radiative models}{August 2019}{0}
+    \href{https://github.com/giovannilopez9808/Documents/raw/master/Posters/2019/CNF/Transferencia%20radiativa/main.pdf}{\textbf{Poster}}
 
-  july 2020
-\end{flushright}
-\end{minipage}
-  % \textbf{Qubit x Qubit semestre 2}diciembre 2020
-  
-  % \textbf{Qubit x Qubit semestre 1} agosto 2020
-  
-  %  agosto 2020
-  
-  % \textbf{Qiskit Globar Summer School, IBM} julio 2020
-  
-  % \textbf{Escuela de Verano, CIMAT Merida} junio 2020
-  
-  % \textbf{Escuela Avanzada en Física, Cinvestav} julio 2019
-  
-  % \textbf{XXVII Escuela de Verano en Física, UNAM} junio 2019
+      The TUV model and the SMARTS model estimate the irradiance solar and solar spectre respectively. We analyzed the relativistic differences of the estimations for the Monterrey metropolitan area. The source codes of the two models were modified to read the values of the parameters from a database.\\
 
 
-\end{multicols}
-\end{document}
+      \section{Education}\\
+
+      \textbf{Bachelor of Science in Physics} \\
+      Universidad Autónoma de Nuevo León\\
+      Nuevo León, Mexico.\\
+
+      \textbf{Master's degree in computer science}\\
+      Centro de Investigación en Matemáticas\\
+      Guanajuato, México
+    \end{multicols}
+    \begin{flushleft}
+      \changefontsizes{10pt}
+      \textbf{Note}:
+
+      The words in blue color (article, report, poster and website) are hyperlinks.
+    \end{flushleft}
+    \end{document}
