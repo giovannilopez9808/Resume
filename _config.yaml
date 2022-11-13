@@ -1,0 +1,171 @@
+# Profile section
+profile:
+  first_name: Giovanni Gamaliel
+  last_name: López Padilla
+  picture: static/img/image.jpg
+  contact:
+    address_one: Torreón, Coahuila
+    address_two:
+    phone: 871-278-37-70
+  email: giovannilopez9808@gmail.com
+  description: Soy un científico entusiasmado en el análisis de datos y su representación física. Practicante de Data Science con el desarrollo de soluciones tecnológicas haciendo uso de algoritmos, teorías físicas, programación, modelos matemáticos, extracción y visualización de datos. Apoyando a organizaciones civiles con herramientas computacionales.
+
+# Social section
+social:
+  website: https://resumegglp.herokuapp.com/
+  wpforms: https://github.com/giovannilopez9808/Resume/raw/main/Document/cv_gglp.pdf
+  github: https://github.com/giovannilopez9808
+  twitter:
+  linkedin: https://www.linkedin.com/in/gamaliel-lópez-padilla
+  facebook:
+  dev:
+  medium:
+
+# Education section
+education:
+  item5:
+    institution: Data Structures and Algorithms in Python
+    program: Programa propórcionado por jovian.ai
+    describtion: Introducción a las estructuras de datos y a los algoritmos de búsqueda, ordenamiento y optimización.
+    from: Enero 2021
+    to: Marzo 2021
+  item4:
+    institution: Deep Learning with Pytorch
+    program: Programa proporcionado en jovian.ai
+    description: Introducción a la libreria pytorch para el uso de inteligencia artificial en imagenes
+    from: Diciembre 2020
+    to: Enero 2021
+    reference: https://jovian.ai/learn/deep-learning-with-pytorch-zero-to-gans
+  item3:
+    institution: Universidad Autónoma de Nuevo León
+    program: Licenciatura en física
+    description: Titulación en proceso con especialización en simulaciones numéricas.
+    from: Agosto 2016
+    to: Diciembre 2020
+  item2:
+    institution: Universidad Nacional de Córdoba
+    program: Ecuaciones en Derivadas Parciales, desde la teoría a las aproximaciones numéricas
+    description: Curso de posgrado donde se revisaron los fundamentos de las ecuaciones diferenciales parciales y como resolverlas usando el lenguaje Julia y Python.
+    from: Agosto 2020
+    to: Diciembre 2020
+  item1:
+    institution: Qiskit Global Summer School
+    program: Escuela de verano donde se enseño como utilizar la libreria Qiskit para computo cuántico
+    description: Se desarrollo un circuito el cual realizaba la simulación de un compuesto químico.
+    from: Julio 2020
+    to: Julio 2020
+  reference: https://qiskit.org/events/summer-school/
+
+# Community section:
+community:
+  item1:
+    institution: QuantumHispano
+    program: Cofundador
+    description: Cofundador de la comunidad QuantumHispano, la cual es la encargada de la coordinación de cursos para la introducción en la computación cuántica y la divulgación de los avances científicos en esta rama de la física y computación
+    from: Agosto 2019
+    to: Presente
+    link: https://quantumhispano.org/
+  item0:
+    institution: Universidad Autónoma de Nuevo León
+    program: Talleres Estudiantiles FCFM-UANL
+    description: He impartido y coordinado cada semestre una serie de talleres para el desarrollo de los estudiantes de la universidad en ambitos extras para que el desarrollo sea el optimo, esto enseñando herramientas más avanzadas para el análisis y visualización de datos y simulaciones moleculares
+    from: Agosto 2018
+    to: Presente
+    link: https://www.facebook.com/groups/1716503418572046
+  item2:
+    institution: Facultad de Ciencias Físico-Matemáticas
+    program: Coordinación de la Asociación de Estudiantes de Física
+    description: Desarrolle la coordinación de Tesorería de la Asociación de Estudiantes de Física, creando y llevando acabo actividades economicas para la recaudación de fondos para las actividades y apoyos para la comunidad estudiantil.
+    from: Agosto 2017
+    to: Noviembre 2018
+    link: https://www.facebook.com/groups/193411004019887
+
+# Skills section
+tools:
+  # Consider that the following are fa icons:
+  #   https://fontawesome.com/icons?d=gallery&s=brands
+  - python
+  - git-alt
+  - slack
+  - trello
+  - markdown
+  - html5
+  - css3-alt
+  - bootstrap
+  - linux
+extra_skills:
+  - Extracción de los datos de la NASA, ESA, AERONET, DAVIS
+  - Automatización de de análisis de datos
+  - Ajuste de modelos matemáticos basado en datos experimentales
+  - Procesamiento de imagenes
+  - Inteligencia artificial
+  - Análisis de datos gubernamentales e institucionales
+
+# Projects section
+projects:
+  item8:
+    title: Ultraviolet Radiation Environment of a Tropical Megacity in Transition Mexico City 2000–2019
+    description: En base a los datos medidos por la SEDEMA en el periodo 2000-2019 de irradiancia solar, datos de ozono medidos por el satelite OMI-NASA y datos de aerosoles proporcionados por AERONET se obtuvo la tendencia del índice UV en la Ciudad de México, esto con el fin de observar cambios provocados por las políticas de medio ambiente.
+    link: https://pubs.acs.org/doi/10.1021/acs.est.0c08515
+    github:
+    img: trend_paper.jpg
+  item11:
+    title: Instalación sugerida para los sensores Skye UVA, UVB y UVI
+    description: Se presento un informe para el SIMA de Nuevo León, México. En este informe se realiza una sugerencia acerca de donde se sugiere la localización óptima para la instalación de los sensores Skye, esto bajo estudios dermatológicos y atmosféricos.
+    link: https://github.com/giovannilopez9808/Documents/raw/master/Informes/Informe_radsolar_29Mar21.pdf
+    github:
+    img: informe_sima.png
+  item10:
+    title: TES para tu salud
+    description: Plataforma creada para ofrecer el tiempo de exposición solar (TES) para el tratamiento de psoriasis a los pacientes del Centro Dermatologico de Pascua, Ciudad de México, actualmente esta uso y los pacientes han mostrado mejorias en su situación.
+    link: http://tes-v1.herokuapp.com/
+    github:
+    img: tes_webpage.png
+  item9:
+    title: Comparación de tres métodos usando radiación solar para la producción de Pre-Vitamina D3 en la piel.
+    description: A partir de resultados de otros científicos y mediciones in situ del índice UV se calculo el TES al cual se debe exponer una persona a la radiación solar, realizando así una comparación de los tres métodos distintos, esto con el objetivo de obtener la mejor vía de automatizar el calculo.
+    link: https://github.com/giovannilopez9808/Documents/raw/master/Articulos/Vitamin_D_2020.pdf
+    github:
+    img: vitamin_paper.png
+  item7:
+    title: Análisis basado en imágenes satelitales de Google Earth en el periodo 25/May/2006 al 10/Ago/2019
+    description: A partir de la línea temporal de Google Earth se le realizo un procesamiento de imagenes para obtener los bordes de los objetos, para observar las zonas de cambios y peculiaridades.
+    link: https://github.com/giovannilopez9808/Documents/raw/master/Informes/Edge_detection_2020.pdf
+    github:
+    img: animation.gif
+  item6:
+    title: Localización de incendios en el Delta del río Paraná
+    description: Por medio de datos satelitales proporcionados por la plataforma FIRMS de la NASA y la NOA se obtiene la información sobre el número de incendios. Basados en estos datos se creó un código para procesar y contabilizar el número de incendios que afectaron a la región de Rosario y zonas aledañas, en el periodo del 3 de junio al 4 de agosto 2020.
+    link: https://github.com/giovannilopez9808/Documents/raw/master/Informes/Focos%20de%20incendio%20en%20las%20islas%20del%20Paran%C3%A1%20%20frente%20a%20Rosario%20%20(Piacentini%2C%20Ipi%C3%B1a%2C%20Lopez-Padilla%2C%20Bolmaro)%20(Piacentini).pdf
+    github:
+    img: viirs-Fire.gif
+  item5:
+    title: Creación de fractales usando el conjunto de Julia
+    description: Usando la definición del conjunto de Julia y se crearon una serie de fractales para analizar la evolución alrededor del origen.
+    link:
+    github: https://github.com/giovannilopez9808/Julia_WorkShop_2021Q1/blob/main/soluci%C3%B3n_primer_proyecto_1/Primer_proyecto.ipynb
+    img: fractal.gif
+  item4:
+    title: Estimación de los TES en la Ciudad de México
+    description: Por medio de la definición de la dosis UVA y eritemica y el uso de datos de irradiancia proporcionados por la SEDEMA se obtuvieron los tiempos de exposicion solar por minuto en el horario 8:00 hrs - 18:00 hrs.
+    link: https://github.com/giovannilopez9808/Documents/raw/master/Posters/2020/CNF/TES/main.pdf
+    github:
+    img: tes_poster.png
+  item3:
+    title: Análisis a los parámetros atmosféricos en el Área Metropolitana de Monterrey
+    description: Haciendo uso de las mediciones de PM10 realizadas por SIMA y una modificación propia del modelo SMARTS, se calcularon las diferencias relativas con el fin de observar las tendencias y sus efectos sobre los habitantes del Área Metropolitana de Monterrey.
+    link: https://github.com/giovannilopez9808/Documents/raw/master/Posters/2020/CNF/PM10/main.pdf
+    github:
+    img: pm_poster.png
+  item2:
+    title: Estudio de la irradiancia solar con dos modelos de transferencia radiativa y su comparación con mediciones
+    description: Haciendo el uso del modelo TUV y el modelo SMARTS, se analizaron las diferencias relativas de la irradianica solar. Se modificaron los códigos fuente de los dos modelos para automatizar el cálculo, esto con ayuda de una base de datos.
+    link: https://github.com/giovannilopez9808/Documents/raw/master/Posters/2019/CNF/Transferencia%20radiativa/main.pdf
+    github:
+    img: transferencia_poster.png
+  item1:
+    title: Análisis de las irradiancioas UVA y eritémica medidas por el sistema de monitoreo atmosférico de la Ciudad de México
+    description: Se realizó un estudio a las mediciones de irradiancia para el año 2016 haciendo uso del modelo TUV para obtener que tan factible es usar este modelo para realizar estimaciones de irradiancia solar haciendo uso de parámetros atmosféricos medidos por satelites.
+    link: https://github.com/giovannilopez9808/Documents/raw/master/Posters/2019/AFA/Analisis%20indice%20UV/Analisis%20de%20irradiancia.pdf
+    github:
+    img: irradiancia_poster.png
