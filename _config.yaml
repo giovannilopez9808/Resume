@@ -23,62 +23,58 @@ social:
 
 # Education section
 education:
-  item5:
-    institution: Data Structures and Algorithms in Python
-    program: Programa propórcionado por jovian.ai
-    describtion: Introducción a las estructuras de datos y a los algoritmos de búsqueda, ordenamiento y optimización.
-    from: Enero 2021
-    to: Marzo 2021
   item4:
-    institution: Deep Learning with Pytorch
-    program: Programa proporcionado en jovian.ai
-    description: Introducción a la libreria pytorch para el uso de inteligencia artificial en imagenes
-    from: Diciembre 2020
-    to: Enero 2021
-    reference: https://jovian.ai/learn/deep-learning-with-pytorch-zero-to-gans
+    institution: Centro de Investigación en Matemáticas
+    program: Maestría en Ciencias con Especialidad en Computación y Matemáticas Industriales
+    from: Agosto 2021
+    to: Julio 2023
   item3:
+    institution: MUFRAMEX 2nd Thematic School on Deep Generative Models
+    program: Escuela de otoño donde se abordaron modelos generativos
+    from: 16 Noviembre 2022
+    to: 19 Noviembre 2022
+  item2:
     institution: Universidad Autónoma de Nuevo León
     program: Licenciatura en física
-    description: Titulación en proceso con especialización en simulaciones numéricas.
     from: Agosto 2016
     to: Diciembre 2020
-  item2:
+  item1:
     institution: Universidad Nacional de Córdoba
     program: Ecuaciones en Derivadas Parciales, desde la teoría a las aproximaciones numéricas
-    description: Curso de posgrado donde se revisaron los fundamentos de las ecuaciones diferenciales parciales y como resolverlas usando el lenguaje Julia y Python.
     from: Agosto 2020
     to: Diciembre 2020
-  item1:
+  item0:
     institution: Qiskit Global Summer School
-    program: Escuela de verano donde se enseño como utilizar la libreria Qiskit para computo cuántico
-    description: Se desarrollo un circuito el cual realizaba la simulación de un compuesto químico.
+    program: Escuela de verano impartida por IBM para el uso de Qiskit para la simulación de la computación cuántica
     from: Julio 2020
     to: Julio 2020
-  reference: https://qiskit.org/events/summer-school/
 
 # Community section:
 community:
-  item1:
+  item3:
+    institution: Centro de Investigación en Matemáticas
+    program: Ayudante de MUFRAMEX school
+    description: Fungi como ayudante durante las sesiones de practica durante la escuela de otoño MUFRAMEX. Brinde apoyo teórico y practico en las implementaciones de los modelos generativos.
+    from: 16 Noviembre 2022
+    to: 19 Noviembre 2022
+  item2:
     institution: QuantumHispano
     program: Cofundador
     description: Cofundador de la comunidad QuantumHispano, la cual es la encargada de la coordinación de cursos para la introducción en la computación cuántica y la divulgación de los avances científicos en esta rama de la física y computación
     from: Agosto 2019
     to: Presente
-    link: https://quantumhispano.org/
-  item0:
+  item1:
     institution: Universidad Autónoma de Nuevo León
     program: Talleres Estudiantiles FCFM-UANL
-    description: He impartido y coordinado cada semestre una serie de talleres para el desarrollo de los estudiantes de la universidad en ambitos extras para que el desarrollo sea el optimo, esto enseñando herramientas más avanzadas para el análisis y visualización de datos y simulaciones moleculares
+    description: Impartí y coordine un conjunto de talleres dirigido hacia los estudiantes de la Facultad con el proposito de que el estudiante tuviera un óptimo desarrollo. Los talleres fueron enfocados en la enseñanza de herramientas avanzadas para el análisis y visualización de datos obtenidas a partir de simulaciones.
     from: Agosto 2018
     to: Presente
-    link: https://www.facebook.com/groups/1716503418572046
-  item2:
+  item0:
     institution: Facultad de Ciencias Físico-Matemáticas
     program: Coordinación de la Asociación de Estudiantes de Física
-    description: Desarrolle la coordinación de Tesorería de la Asociación de Estudiantes de Física, creando y llevando acabo actividades economicas para la recaudación de fondos para las actividades y apoyos para la comunidad estudiantil.
+    description: Desarrolle la coordinación de Tesorería de la Asociación de Estudiantes de Física. Se crearon actividades económicas para la recaudación de fondos con el proposito de brindar apoyos económicos hacia comunidad estudiantil.
     from: Agosto 2017
     to: Noviembre 2018
-    link: https://www.facebook.com/groups/193411004019887
 
 # Skills section
 tools:
@@ -86,20 +82,17 @@ tools:
   #   https://fontawesome.com/icons?d=gallery&s=brands
   - python
   - git-alt
+  - github
   - slack
-  - trello
   - markdown
-  - html5
-  - css3-alt
-  - bootstrap
   - linux
 extra_skills:
-  - Extracción de los datos de la NASA, ESA, AERONET, DAVIS
+  - Extracción de datos de la NASA, ESA, AERONET, DAVIS
   - Automatización de de análisis de datos
   - Ajuste de modelos matemáticos basado en datos experimentales
   - Procesamiento de imagenes
-  - Inteligencia artificial
   - Análisis de datos gubernamentales e institucionales
+  - Modelos basados en aprendizaje maquina, deep learning y generativos
 
 # Projects section
 projects:
