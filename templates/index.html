@@ -40,9 +40,8 @@
     <link href="static/css/resume.css" rel="stylesheet" />
     <link
       rel="shortcut icon"
-      href="https://avatars3.githubusercontent.com/u/36435547"
-      type="image/x-icon"
-    />
+      href="https://upload.wikimedia.org/wikipedia/commons/a/a5/Archlinux-icon-crystal-64.svg"
+      <!--href="https://avatars3.githubusercontent.com/u/36435547"-->
   </head>
 
   <body id="page-top">
@@ -111,7 +110,7 @@
           <div class="subheading mb-5">
             {% for item in data.profile.contact.values() %} {% if item != None
             %} {{ item }} · {% endif %} {% endfor %}
-            <a href="mailto:{{ data.profile.email }}" style="color: #73b2ff;"
+            <a href="mailto:{{ data.profile.email }}" style="color: #bd93f9;"
               >{{ data.profile.email }}</a
             >
           </div>
