@@ -1,126 +1,92 @@
-%!TEX TS-program = xelatex
+%TEX TS-program = xelatex
 \documentclass[a3paper]{adcv_color}
 \usepackage[english]{babel}
 \usepackage{multicol}
 \usepackage{scrextend}
-\usepackage{graphicx}
-\usepackage{float}
 \setlength{\columnsep}{1cm}
-\newenvironment{proyects}[2]{\begin{minipage}{0.8\linewidth}\textbf{#1}
-\end{minipage}\begin{minipage}{0.2\linewidth}
-    \begin{flushright}
-      #2
-}{\end{flushright}
-  \end{minipage}}
-% \newenvironment{proyects}[1]{\begin{minipage}{0.8\linewidth}\textbf{#1}}{\end{minipage}}
 
-\title{Gamaliel-Lopez CV}
+\title{Gamaliel-Lopez-Padilla}
 \pagestyle{empty}
 \adcvname{López Padilla}{Giovanni Gamaliel}{}
 \adcvemail{giovannilopez9808}{gmail}{com}
-\adcvphone{(+52) 871-278-37-70}
-\adcvwebsite{http://resumegglp.herokuapp.com/}{resumegglp.herokuapp.com}
-%\adcvdate{}
-
+%\adcvphone{}
+%\adcvwebsite{}
+%\adcvphone{(+52) 871-278-37-70}
+%\adcvwebsite{http://resumegglp.herokuapp.com/}{resumegglp.herokuapp.com}
+% \adcvdate{}
+\newcommand{\proyect}[3]{\begin{minipage}{1\linewidth}
+    \begin{minipage}{0.8\linewidth}
+      \textbf{#1}
+    \end{minipage}
+    \begin{minipage}{0.19\linewidth}
+      \begin{flushright}
+        \vspace{#3cm}
+        \textit{#2}
+      \end{flushright}
+    \end{minipage}\\
+  \end{minipage}
+  \vspace{0.1cm}\\
+}
 \begin{document}
-\changefontsizes{17.5pt}
-\begin{minipage}{0.17\linewidth}
-  \includegraphics[width=5cm,height=4cm,angle=90]{photo.jpg}
-\end{minipage}
-\begin{minipage}{0.82\linewidth}
-  Me gustan las ciencias y el como puedo abordarlas desde un enfoque matemático con el proposito resolver problemas de una manera óptima mediante la implementación de algoritmos para obtener una mejor comprensión de los fenómenos. De igual manera siento una enorme curiosidad por los sistemas que me rodean y como es que interaccionan con otros.
-\end{minipage}\\
+\changefontsizes{15.5pt}
+I like science and the approaches that i can do with algorithms and code implementations to solve problems or analyze data. In the same way i have a big curiosity in the things that surround me. For these reason sometimes i disassemble or see how a framework or algorithm works inside.
 
-\begin{minipage}{0.7\linewidth}
-  \section{Habilidades}\\
-
-  \begin{minipage}{0.22\linewidth}
-    \begin{flushleft}
-      \textbf{S.O.}
-      \textbf{Programación}\\
-      \textbf{Librerías}\\
-      \textbf{Web}\\
-      \textbf{Idiomas}
-    \end{flushleft}
-  \end{minipage}
-  \begin{minipage}{0.78\linewidth}
-    \begin{flushleft}
-      Windows, MacOs, Linux (distribuciones Debian)\\
-      Python, Fortran, LaTeX, Java, Julia, C\\
-      Numpy, Matplotlib, Pandas, Scipy, Flask, Qiskit\\
-      CSS, HTML5, Javascript\\
-      Español, ingles
-    \end{flushleft}
-  \end{minipage}
-\end{minipage}
-\begin{minipage}{0.29\linewidth}
-  \vspace{-1.4cm}
-  \section{Educación}\\
-
-  \textbf{Licenciatura en física}\\
-  Universidad Autónoma de Nuevo León
-\end{minipage}\\
-
-\section{Cursos}
-
-\begin{minipage}{0.85\linewidth}
-  \textbf{Qubit x Qubit semestre 1 y 2}\\
-  \textbf{Ecuaciones en diferenciales parciales desde la teoría a las aproximaciones numéricas}\\
-  \textbf{Qiskit Globar Summer School, IBM}
-\end{minipage}
-\begin{minipage}{0.15\linewidth}
-  %\vspace{-0.cm}
-  \begin{flushright}
-    agosto 2020\\
-    agosto 2020\\
-    julio 2020
-  \end{flushright}
-\end{minipage}\\
-
-\section{Proyectos personales}
+\section{Projectos}
 \begin{multicols}{2}
-  \begin{proyects}{Localización y conteo de incendios en la de Santiago, Nuevo León}{marzo 2021}
-  \end{proyects}
 
-  Proyecto actual
+  \proyect{Ultraviolet Radiation Environment of a Tropical Megacity in Transition: Mexico City 2000–2019}{Agosto 2021}{-0.6}
+  \href{https://pubs.acs.org/doi/10.1021/acs.est.0c08515}{\textbf{Artículo}}
 
-  \begin{proyects}{Análisis de parámetros atmosféricos sobre Área Metropolitana de Monterrey en el periodo 2015-2020}{enero 2021}
-  \end{proyects}
+  La Secretaría del Medio Ambiente de la Ciudad de México ha estado realizando mediciones en 13 estaciones metorologicas desde 1997. Analizamos los datos de ozono, CO, NO SO y radiación solar dentro del periodo 2000-2022. Obtuvimos tendencias dentro del periodo de tiempo. Concluyendo que la contaminación atmosférica ha disminuido debido a las politicas de la mega ciudad.
 
-  En proceso de publicación
 
-  \begin{proyects}{Estimación de los tiempos de exposición solar para la producción de la Pre vitamina D en Rosario, Argentina}{diciembre 2020}
-  \end{proyects}
+  \proyect{Análisis de la radiación solar UV para la síntesis de Pre-Vitamina D en la piel en Rosario, Argentina}{Enero 2022}{-0.8}
+  \href{https://anales.fisica.org.ar/journal/index.php/analesafa/article/view/2318}{\textbf{Artículo}}
 
-  En proceso de publicación
+  Few  foods  contain  vitamina  D$_3$ naturally,  the  main  source  of  obtaining  the  ultraviolet (UV) solar radiation, which triggers the synthesis on the skin’s surface. In this study, the effective UV solar irradiance for the synthesis of pre-vitamin D$_3$ was determined in Rosario city, Argentina, using three methods: Proportionality Coefficient, Herman’s equation and TUV model.\\
 
-  \begin{proyects}{Análisis en la tendencia del índice UV en la Ciudad de México en el periodo 2001-2019}{octubre 2020}
-  \end{proyects}
+  \proyect{Impacto en la calidad del aire en Rosario durante la quema de pastizales en el Delta del Rio de Paraná}{Agosto 2022}{-0.6}
+  \href{https://rephip.unr.edu.ar/handle/2133/24201}{\textbf{Reporte}}
 
-  En proceso de publicación
+  Through satellite's data provided by NASA and NOA's plataform. The fire alarms were measurement by the VIIRS satellite instrument. We process the number of fires that affected the region of Rosario and surrounding areas. We correlate this information with the suspended particles and the number of deaths in the same period of time.\\
 
-  \begin{proyects}{Localización de incendios en el Delta del río Paraná}{agosto 2020}
-  \end{proyects}
+  \proyect{Clasificación de las condiciones del cielo por medio de mediciones de radiación solar global}{Junio 2022}{-0.8}
+  \href{https://github.com/giovannilopez9808/Cloud_classification/raw/main/Document/Main.pdf}{\textbf{Reporte}}
 
-  \href{https://github.com/giovannilopez9808/Posters_templates/blob/master/Informe\%20IFIR/Focos\%20de\%20incendio\%20en\%20las\%20islas\%20del\%20Paran\%C3\%A1\%20\%20frente\%20a\%20Rosario\%20\%20(Piacentini\%2C\%20Ipi\%C3\%B1a\%2C\%20Lopez-Padilla\%2C\%20Bolmaro)\%20(Piacentini).pdf}{\textbf{Informe entregado al gobierno de Rosario, Argentina}}
+  The cloud cover is an important characteristic to any type of weather forecasting. The solar radiation is a natural detector of clouds. In recent decades, a several types of models have been developed to classify different sky types according to cloud conditions or percentage cloud cover.
 
-  \begin{proyects}{Cálculo de los tiempos de exposición solar para el tratamiento de Psoriasis en la Ciudad de México}{agosto 2020}
-  \end{proyects}
+  \columnbreak
 
-  \href{https://github.com/giovannilopez9808/Posters_templates/blob/master/2020/CNF/TES/main.pdf}{\textbf{Poster}}, \href{http://tes-v1.herokuapp.com/}{\textbf{Plataforma}}
+  \proyect{Estimación de los tiempos de exposición solar para obtener el tratamiento para la Psoriasis en Ciudad de México}{Agosto 2020}{-0.2}
+  \href{https://github.com/giovannilopez9808/Documents/raw/master/Posters/2020/CNF/TES/main.pdf}{\textbf{Poster}}, \href{http://tes-v1.herokuapp.com/}{\textbf{Website}}
 
-  \begin{proyects}{Análisis de las irradiancias UVA y eritémica medidas por el Sistema Monitoreo atmosférico de la Ciudad de México}{octubre 2019}
-  \end{proyects}
+  Based on the measurements of erythemal radiation provided by the Environment Secretary of Mexico City, the solar exposure time was estimated for all the different phototypes and cloud conditions. The results were communicated to the Easter Dermatological Center. The patients can consult their treatment in a website.\\
 
-  \href{https://github.com/giovannilopez9808/Posters_templates/blob/master/2019/AFA/Analisis\%20indice\%20UV/Analisis\%20de\%20irradiancia.pdf}{\textbf{Poster}}
+  \proyect{Análisis de la irradiancia UVA y eritemica en la Ciudad de México}{Octubre 2019}{-0.2}  \href{https://github.com/giovannilopez9808/Documents/raw/master/Posters/2019/AFA/Analisis%20indice%20UV/Analisis%20de%20irradiancia.pdf}{\textbf{Poster}}
 
-  \begin{proyects}{Estudio de la irradiancia solar con dos modelos de transferencia radiativa}{agosto 2019}
-  \end{proyects}
+    With the ozone measurements from OMI-NASA instrument and the AOD from AERONET, we verified the ratios from TUV model results respect the surface measurements. This results was submitted in 104 Reunión de la Asociación Física Argentina.\\
 
-  \href{https://github.com/giovannilopez9808/Posters_templates/tree/master/2019/CNF/Transferencia\%20radiativa}{\textbf{Poster}}
-\end{multicols}
-\begin{minipage}{1\linewidth}
-  \hspace*{-4cm}
-  \includegraphics[height=4cm,width=33cm]{image.png}
-\end{minipage}
-\end{document}
+    \proyect{Análisis de la irradiancia solar con dos modelos de transferencia radiativa}{Agosto 2019}{0}
+    \href{https://github.com/giovannilopez9808/Documents/raw/master/Posters/2019/CNF/Transferencia%20radiativa/main.pdf}{\textbf{Poster}}
+
+      The TUV model and the SMARTS model estimate the irradiance solar and solar spectre respectively. We analyzed the relativistic differences of the estimations for the Monterrey metropolitan area. The source codes of the two models were modified to read the values of the parameters from a database.\\
+
+
+      \section{Educación}\\
+
+      \textbf{Licienciatura en Física} \\
+      Universidad Autónoma de Nuevo León\\
+      Nuevo León, Mexico.\\
+
+      \textbf{Maestria en ciencias con especialidad en computación y matemáticas industriales}\\
+      Centro de Investigación en Matemáticas\\
+      Guanajuato, México
+      \begin{flushright}
+
+        \changefontsizes{10pt}
+        \textbf{Nota}:
+
+        Las palabras en color azul (artículo, reporte, poster y website) son hipervinculos.
+      \end{flushright}
+    \end{multicols}
+    \end{document}
