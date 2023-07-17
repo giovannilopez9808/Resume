@@ -51,6 +51,12 @@ education:
 
 # Community section:
 community:
+  item4:
+    institution: Centro de Investigación en Matemáticas
+    program: Ayudante de catedra de la clase de Temas Selectos de Aprendizaje Maquina I
+    description: Realice actividades de apoyo durante la clase. Las actividades fueron apyo teórico a los estudiantes de manera personal y general, revisión y calificación de las tareas semanales.
+    from: 15 enero 2023
+    to: 21 mayo 2023
   item3:
     institution: Centro de Investigación en Matemáticas
     program: Ayudante de MUFRAMEX school
