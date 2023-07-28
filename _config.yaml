@@ -126,17 +126,17 @@ projects:
     title: Análisis basado en imágenes satelitales de Google Earth
     link: https://github.com/giovannilopez9808/Documents/raw/master/Informes/Edge_detection_2020.pdf
     github:
-    img: animation.gif
+    img: edge.png
   item6:
     title: Localización de incendios en el Delta del río Paraná
     link: https://github.com/giovannilopez9808/Documents/raw/master/Informes/Focos%20de%20incendio%20en%20las%20islas%20del%20Paran%C3%A1%20%20frente%20a%20Rosario%20%20(Piacentini%2C%20Ipi%C3%B1a%2C%20Lopez-Padilla%2C%20Bolmaro)%20(Piacentini).pdf
     github:
-    img: viirs-Fire.gif
+    img: fire.png
   item5:
     title: Creación de fractales usando el conjunto de Julia
     github:
     link: https://github.com/giovannilopez9808/Julia_WorkShop_2021Q1/blob/main/soluci%C3%B3n_primer_proyecto_1/Primer_proyecto.ipynb
-    img: fractal.gif
+    img: fractal.png
   item4:
     title: Estimación de los TES en la Ciudad de México
     description: Por medio de la definición de la dosis UVA y eritemica y el uso de datos de irradiancia proporcionados por la SEDEMA se obtuvieron los tiempos de exposicion solar por minuto en el horario 8:00 hrs - 18:00 hrs.
