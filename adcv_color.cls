@@ -398,11 +398,12 @@
 
   %\vspace{\baselineskip}%
 
+  \def\adcv@website{\houseicon~\href{\adcv@websiteurl}{\adcv@websitetext}}%
   \ifdefined\adcv@websiteurl%
     \ifx\adcv@websiteurl\empty%
       \def\adcv@website{}%
-    %\else%
-      %\def\adcv@website{\houseicon~\href{\adcv@websiteurl}{\adcv@websitetext}}%
+      \def\adcv@website{\houseicon~\href{\adcv@websiteurl}{\adcv@websitetext}}%
+    \else%
     \fi%
   \else%
     \def\adcv@website{}%
@@ -412,7 +413,7 @@
   \begin{center}
     \adcv@email \hspace{1cm}
     %\adcv@telephone \hspace{1cm}
-    %\adcv@website
+    \adcv@website
   \end{center}
 
 }
