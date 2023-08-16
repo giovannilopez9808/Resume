@@ -102,6 +102,31 @@ extra_skills:
 
 # Projects section
 projects:
+  item16:
+    title: Detección automática de tweets agresivos
+    link: https://github.com/giovannilopez9808/AgressiveDetectionMEXA3T
+    github:
+    img: mexa3t.png
+  item15:
+    title: Análisis de los patrones de uso de la aplicación MiBici en el periodo 2015-2018
+    link: https://raw.githubusercontent.com/giovannilopez9808/MiBici/main/Document/Main.pdf
+    github:
+    img: mibici.png
+  item14:
+    title: Índice de marginación en México en el periodo 2015-2020.
+    github: 
+    link: https://raw.githubusercontent.com/giovannilopez9808/IndiceDeMarginacion2015_2020/main/Document/Main.pdf
+    img: marginacion.png
+  item13:
+    title: Top2Vec
+    link: https://github.com/giovannilopez9808/Top2Vec/tree/main
+    github:
+    img: tripadvisor_clustered.png
+  item12:
+    title: Retina VesselNet
+    link: https://raw.githubusercontent.com/giovannilopez9808/RetinaVesselNet/main/Document/Main.pdf
+    github:
+    img: vessel.png
   item8:
     title: Ultraviolet Radiation Environment of a Tropical Megacity in Transition Mexico City 2000–2019
     link: https://pubs.acs.org/doi/10.1021/acs.est.0c08515
