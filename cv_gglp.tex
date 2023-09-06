@@ -9,66 +9,45 @@
 \adcvname{López Padilla}{Giovanni Gamaliel}{}
 \adcvemail{giovannilopez9808}{gmail}{com}
 \adcvwebsite{https://giovannilopez9808.github.io/}{giovannilopez9808.github.io}
-\newcommand{\proyect}[3]{\begin{minipage}{1\linewidth}
-		\begin{minipage}{0.8\linewidth}
+\newcommand{\proyect}[5]{\begin{minipage}{1\linewidth}
+		\begin{minipage}{1\linewidth}
 			\textbf{#1}
 		\end{minipage}
-		\begin{minipage}{0.19\linewidth}
-			\begin{flushright}
-				\vspace{#3cm}
-				\textit{#2}
-			\end{flushright}
-		\end{minipage}\\
+		%\begin{minipage}{0.19\linewidth}
+		%\begin{flushright}
+		%\vspace{#3cm}
+		%\textit{#2}
+		%\end{flushright}
+		%\end{minipage}
 	\end{minipage}
+	\href{#4}{\textbf{#5}}
+	\vspace{0.05cm}\\
 }
 \begin{document}
 \changefontsizes{16pt}
 
 Me gusta la ciencia y como la comunidad realiza  aportaciones con sus investigaciones para resolver algún problema usando resultados expuestos de otras personas para lograr sus objetivos. De la misma forma me gusta la filosofía del open source, donde las personas publican sus proyectos y cualquier persona puede aportar y usar sus avances.
 
-\section{Projectos}
+\section{Projectos}\\
 %\begin{multicols}{2}
 
-\proyect{Clasificación de las condiciones del cielo por medio de mediciones de radiación solar global}{Junio 2022}{-0.8}\href{https://github.com/giovannilopez9808/Cloud_classification/raw/main/Document/Main.pdf}{\textbf{Reporte}}
-\vspace{0.05cm}\\
+\proyect{Clasificación de las condiciones del cielo por medio de mediciones de radiación solar global}{Junio 2022}{-0.8}{https://github.com/giovannilopez9808/Cloud_classification/raw/main/Document/Main.pdf}{Reporte}
 
-%La condición de cielo es importante para caracterizar la predicción del clima. La radiación solar es un detector natural de nubes. Se implementaron modelos estadísticos y basados en redes neuronales para obtener el mejor modelo para resolver el problema a partir de la radiación solar medida in situ.
-\proyect{Ultraviolet Radiation Environment of a Tropical Megacity in Transition: Mexico City 2000–2019}{Agosto 2021}{-0.6}
-\href{https://pubs.acs.org/doi/10.1021/acs.est.0c08515}{\textbf{Artículo}}
-\vspace{0.05cm}\\
+\proyect{Ultraviolet Radiation Environment of a Tropical Megacity in Transition: Mexico City 2000–2019}{Agosto 2021}{-0.6}{https://pubs.acs.org/doi/10.1021/acs.est.0c08515}{Artículo}
 
-%La Secretaría del Medio Ambiente de la Ciudad de México ha estado realizando mediciones en 13 estaciones meteorológicas desde 1997. Se analizaron datos de ozono, CO, NO, SO y radiación solar del periodo 2000-2022. Con las tendencias y análisis de regresiones lineales  se concluyo que la contaminación atmosférica ha disminuido debido a las políticas de la mega ciudad.
-\proyect{Análisis de la radiación solar UV para la síntesis de Pre-Vitamina D en la piel en Rosario, Argentina}{Enero 2022}{-0.8}
-\href{https://anales.fisica.org.ar/journal/index.php/analesafa/article/view/2318}{\textbf{Artículo}}
-\vspace{0.05cm}\\
+\proyect{Análisis de los patrones de uso de la aplicación MiBici en el periodo 2015-2018}{Noviembre 2021}{-0.2}{https://raw.githubusercontent.com/giovannilopez9808/MiBici/main/Document/Main.pdf}{Reporte}
 
-%La principal fuente de vitamina D$_3$ es por medio de la exposición a la radiación solar.  En este estudio se estimó la efectividad de la radiación UV para la síntesis de vitamina D$_3$ en Rosario, Argentina, usando tres métodos: coeficiente de proporcionalidad, ecuación de Herman y el modelo TUV.\\
+\proyect{Índice de marginacion en México dentro del periodo 2015-2020}{Octubre 2021}{-0.2}{https://raw.githubusercontent.com/giovannilopez9808/IndiceDeMarginacion2015_2020/main/Document/Main.pdf}{Reporte}
 
-\proyect{Impacto en la calidad del aire en Rosario durante la quema de pastizales en el Delta del Rio de Paraná}{Agosto 2022}{-0.6}
-\href{https://rephip.unr.edu.ar/handle/2133/24201}{\textbf{Reporte}}
-\vspace{0.05cm}\\
+\proyect{Análisis de la radiación solar UV para la síntesis de Pre-Vitamina D en la piel en Rosario, Argentina}{Enero 2022}{-0.8}{https://anales.fisica.org.ar/journal/index.php/analesafa/article/view/2318}{Artículo}
 
-%Usando datos satelitales recopilados por la NASA y NOA se calculó el número de alarmas de incendios dentro del área del Delta del Río. Con los resultados obtenidos se estimó la correlación del número de incendios, las partículas suspendidas y el número de muertes dentro del mismo periodo.\\
+\proyect{Impacto en la calidad del aire en Rosario durante la quema de pastizales en el Delta del Rio de Paraná}{Agosto 2022}{-0.6}{https://rephip.unr.edu.ar/handle/2133/24201}{Reporte}
 
+\proyect{Estimación de los tiempos de exposición solar para obtener el tratamiento para la Psoriasis en Ciudad de México}{Agosto 2020}{-0.2}{https://github.com/giovannilopez9808/Documents/raw/master/Posters/2020/CNF/TES/main.pdf}{Poster}
 
-\columnbreak
+\proyect{Análisis de la irradiancia UVA y eritemica en la Ciudad de México}{Octubre 2019}{-0.2}{https://github.com/giovannilopez9808/Documents/raw/master/Posters/2019/AFA/Analisis\%20indice\%20UV/Analisis\%20de\%20irradiancia.pdf}{Poster}
 
-\proyect{Estimación de los tiempos de exposición solar para obtener el tratamiento para la Psoriasis en Ciudad de México}{Agosto 2020}{-0.2}
-\href{https://github.com/giovannilopez9808/Documents/raw/master/Posters/2020/CNF/TES/main.pdf}{\textbf{Poster}}
-\vspace{0.05cm}\\
-
-%Basado en mediciones de irradiancia solar eritemica, se estimó el tiempo de exposición solar para todos los fototipos y condiciones de cielo. Los resultados fueron comunicados al centro dermatológico de Pascua. Los pacientes pueden consultar sus tratamientos por medio de una plataforma web creada.\\
-
-
-\proyect{Análisis de la irradiancia UVA y eritemica en la Ciudad de México}{Octubre 2019}{-0.2}  \href{https://github.com/giovannilopez9808/Documents/raw/master/Posters/2019/AFA/Analisis%20indice%20UV/Analisis%20de%20irradiancia.pdf}{\textbf{Poster}}
-\vspace{0.05cm}\\
-
-%Con las mediciones de la columna de ozono realizadas por el instrumento OMI-NASA y el AOD de la plataforma AERONET, se calcularon las razones de las estimaciones de radiación UV obtenidas por el modelo TUV y las mediciones in situ. Los resultados fueron presentados en el 104 Reunión de la Asociación Física Argentina.\\
-
-\proyect{Análisis de la irradiancia solar con dos modelos de transferencia radiativa}{Agosto 2019}{0}
-\href{https://github.com/giovannilopez9808/Documents/raw/master/Posters/2019/CNF/Transferencia%20radiativa/main.pdf}{\textbf{Poster}}
-
-%Analizamos las diferencias relativas de las estimaciones obtenidas con los modelos TUV y SMARTS para la Zona Metropolitana de Monterrey. Se modificó el código fuente de los modelos para automatizar las estimaciones a partir de una base de datos.\\
+\proyect{Análisis de la irradiancia solar con dos modelos de transferencia radiativa}{Agosto 2019}{0}{https://github.com/giovannilopez9808/Documents/raw/master/Posters/2019/CNF/Transferencia\%20radiativa/main.pdf}{Poster}
 %\end{multicols}
 
 \section{Educación}
@@ -81,9 +60,9 @@ Nuevo León, Mexico.\\
 Centro de Investigación en Matemáticas\\
 Guanajuato, México
 \begin{flushright}
-	\changefontsizes{10pt}
+	\changefontsizes{12pt}
 	\textbf{Nota}:
 
-	Las palabras en color azul (artículo, reporte, poster y website) son hipervinculos.
+	Las palabras en color azul (artículo, reporte y poster) son hipervinculos.
 \end{flushright}
 \end{document}
