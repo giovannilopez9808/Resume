@@ -4,9 +4,9 @@ profile:
   last_name: López Padilla
   picture: static/img/image.jpg
   contact:
-    address_one: Torreón, Coahuila
+    address_one:
     address_two:
-    phone: 871-278-37-70
+    phone:
   email: giovannilopez9808@gmail.com
   description: Soy un científico entusiasmado en el análisis de datos y su representación física. Practicante de Data Science con el desarrollo de soluciones tecnológicas haciendo uso de algoritmos, teorías físicas, programación, modelos matemáticos, extracción y visualización de datos. Apoyando a organizaciones civiles con herramientas computacionales.
 
@@ -102,6 +102,11 @@ extra_skills:
 
 # Projects section
 projects:
+  item17:
+    title: Pronóstico diario de índice UV basado en mediciones in situ en el Área Metropolitana de Monterrey 
+    link: https://raw.githubusercontent.com/giovannilopez9808/Documents/abd88e91377635bb2306525ce2dae21569de8fe6/Tesis/main.pdf
+    github:
+    img: forecast.png
   item16:
     title: Detección automática de tweets agresivos
     link: https://github.com/giovannilopez9808/AgressiveDetectionMEXA3T
@@ -127,22 +132,22 @@ projects:
     link: https://raw.githubusercontent.com/giovannilopez9808/RetinaVesselNet/main/Document/Main.pdf
     github:
     img: vessel.png
-  item8:
+  item11:
     title: Ultraviolet Radiation Environment of a Tropical Megacity in Transition Mexico City 2000–2019
     link: https://pubs.acs.org/doi/10.1021/acs.est.0c08515
     github:
     img: trend_paper.jpg
-  item11:
+  item10:
     title: Instalación sugerida para los sensores Skye UVA, UVB y UVI
     link: https://github.com/giovannilopez9808/Documents/raw/master/Informes/Informe_radsolar_29Mar21.pdf
     github:
     img: informe_sima.png
-  item10:
+  item9:
     title: TES para tu salud
     link: http://tes-v1.herokuapp.com/
     github:
     img: tes_webpage.png
-  item9:
+  item8:
     title: Comparación de tres métodos usando radiación solar para la producción de Pre-Vitamina D3 en la piel.
     link: https://github.com/giovannilopez9808/Documents/raw/master/Articulos/Vitamin_D_2020.pdf
     github:
