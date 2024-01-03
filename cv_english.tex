@@ -1,90 +1,92 @@
-%TEX TS-program = xelatex
 \documentclass[a3paper]{adcv_color}
 \usepackage[english]{babel}
 \usepackage{multicol}
 \usepackage{scrextend}
 \setlength{\columnsep}{1cm}
-
 \title{Gamaliel-Lopez-Padilla}
 \pagestyle{empty}
-\adcvname{López Padilla}{Giovanni Gamaliel}{}
+\adcvname{}{M.Sc. Giovanni Gamaliel López Padilla}{}
 \adcvemail{giovannilopez9808}{gmail}{com}
-%\adcvphone{}
-%\adcvwebsite{}
-%\adcvphone{(+52) 871-278-37-70}
-%\adcvwebsite{http://resumegglp.herokuapp.com/}{resumegglp.herokuapp.com}
-% \adcvdate{}
-\newcommand{\proyect}[3]{\begin{minipage}{1\linewidth}
-    \begin{minipage}{0.8\linewidth}
-      \textbf{#1}
-    \end{minipage}
-    \begin{minipage}{0.19\linewidth}
-      \begin{flushright}
-        \vspace{#3cm}
-        \textit{#2}
-      \end{flushright}
-    \end{minipage}\\
-  \end{minipage}
-  \vspace{0.1cm}\\
+\adcvwebsite{https://giovannilopez9808.github.io/}{giovannilopez9808.github.io}
+\newcommand{\proyect}[5]{\begin{minipage}{1\linewidth}
+		\begin{minipage}{1\linewidth}
+			\textbf{#1}
+		\end{minipage}
+		%\begin{minipage}{0.19\linewidth}
+		%\begin{flushright}
+		%\vspace{#3cm}
+		%\textit{#2}
+		%\end{flushright}
+		%\end{minipage}
+	\end{minipage}
+	\href{#4}{\textbf{#5}}
+	\vspace{-1cm}\\
 }
 \begin{document}
-\changefontsizes{15.5pt}
-I like science and the approaches that i can do with algorithms and code implementations to solve problems or analyze data. In the same way i have a big curiosity in the things that surround me. For these reason sometimes i disassemble or see how a framework or algorithm works inside.
+\changefontsizes{16pt}
+\begin{flushleft}
+	Me gusta la ciencia y como la comunidad realiza  aportaciones con sus investigaciones para resolver algún problema usando resultados expuestos de otras personas para lograr sus objetivos. De la misma forma me gusta la filosofía del open source, donde las personas publican sus proyectos y cualquier persona puede aportar y usar sus avances.\\
+\end{flushleft}
 
-\section{Projects}
-\begin{multicols}{2}
+\section{Projectos}\\
 
-  \proyect{\textbf{Ultraviolet Radiation Environment of a Tropical Megacity in Transition: Mexico City 2000–2019}}{August 2021}{-0.6}
-  \href{https://pubs.acs.org/doi/10.1021/acs.est.0c08515}{\textbf{Article}}
+\proyect{Pronóstico diario de índice UV basado en mediciones in situ en el Área Metropolitana de Monterrey}{Octubre 2023}{-0.8}{https://raw.githubusercontent.com/giovannilopez9808/Documents/master/Tesis/main.pdf}{Documento}
+\begin{itemize}
+	\setlength\itemsep{0em}
+	\item Cree un modelo basado en redes neuronales para obtener el pronóstico del índice UV para las siguientes 24 horas basado en mediciones in situ y datos satelitales.
+	\item Debido a los resultados obtenidos en este estudio, se llevo acabo una reunión con el Sistema Integral del Monitoreo Ambiental para acordar la implementación del modelo en su sistema y comunicar sus estimaciones al público general.
+\end{itemize}
+\proyect{Clasificación de las condiciones del cielo por medio de mediciones de radiación solar global}{Junio 2022}{-0.8}{https://github.com/giovannilopez9808/Cloud_classification/raw/main/Document/Main.pdf}{Reporte}
+\begin{itemize}
+	\setlength\itemsep{0em}
+	\item Implemente un modelos basado en redes neuronales multicapa, convolucionales y recurrentes para estimar la condición del cielo dado un conjunto de mediciones in situ.
+\end{itemize}
+\proyect{Ultraviolet Radiation Environment of a Tropical Megacity in Transition: Mexico City 2000–2019}{Agosto 2021}{-0.6}{https://pubs.acs.org/doi/10.1021/acs.est.0c08515}{Artículo}
+\begin{itemize}
+	\setlength\itemsep{0em}
+	\item Realice un análisis en las tendencias de los contaminantes atmosféricos por medio de modelos de regresión lineal y medias móviles.
+	\item Debido a la importancia de los resultados expuestos, se realizó una reunión con la secretaria de medio ambiente de la CDMX y académicos expertos en el área.
+\end{itemize}
+\proyect{Detección autommática de tweets agresivos}{Agosto 2022}{-0.6}{https://github.com/giovannilopez9808/AgressiveDetectionMEXA3T}{Repositorio}
+\begin{itemize}
+	\setlength\itemsep{0em}
+	\item Con base en el conjunto de datos de la competencia, MEX-A3T implementé un modelo de clasificación binaria basado en la arquitectura Transformer. Los resultados obtenidos superan el rendimiento expuesto por los demás participantes.
+	\item  Al ser un proyecto con la filosofía open source, el código y la base de datos se encuentra disponible para un público general.
+\end{itemize}
+\proyect{Segmentación de las vasos capilares de los ojos por medio del modelo pix2pix.}{Agosto 2022}{-0.6}{https://raw.githubusercontent.com/giovannilopez9808/RetinaVesselNet/main/Document/Main.pdf}{Reporte}
+\begin{itemize}
+	\setlength\itemsep{0em}
+	\item Se desarrolló un modelo de redes neuronales basado en la arquitectura pix2pix con el fin de segmentar los vasos capilares de los ojos con base en imágenes médicas.
+	\item Se logró replicar los resultados expuestos en el artículo original del modelo y además se mejoró su rendimiento añadiendo un preprocesamiento a las imágenes dadas.
+\end{itemize}
+%\proyect{Análisis de los patrones de uso de la aplicación MiBici en el periodo 2015-2018}{Noviembre 2021}{-0.2}{https://raw.githubusercontent.com/giovannilopez9808/MiBici/main/Document/Main.pdf}{Reporte}
 
-  The Environment Secretary have been measuring in 13 meteorological stations since 1997. We used all the data in the period 2000-2022 to do a study about the trend of atmospheric components as suspended particles, ozone, CO, NO$_2$ and SO$_2$.\\
+%\proyect{Índice de marginacion en México dentro del periodo 2015-2020}{Octubre 2021}{-0.2}{https://raw.githubusercontent.com/giovannilopez9808/IndiceDeMarginacion2015_2020/main/Document/Main.pdf}{Reporte}
 
-  \proyect{\textbf{Analysis of the UV solar irradiance for the synthesis of Pre-Vitamin D$_3$ on the skin in Rosario, Argentina}}{January 2022}{-0.8}
-  \href{https://anales.fisica.org.ar/journal/index.php/analesafa/article/view/2318}{\textbf{Article}}
+%\proyect{Análisis de la radiación solar UV para la síntesis de Pre-Vitamina D en la piel en Rosario, Argentina}{Enero 2022}{-0.8}{https://anales.fisica.org.ar/journal/index.php/analesafa/article/view/2318}{Artículo}
 
-  Few  foods  contain  vitamina  D$_3$ naturally,  the  main  source  of  obtaining  the  ultraviolet (UV) solar radiation, which triggers the synthesis on the skin’s surface. In this study, the effective UV solar irradiance for the synthesis of pre-vitamin D$_3$ was determined in Rosario city, Argentina, using three methods: Proportionality Coefficient, Herman’s equation and TUV model.\\
+%\proyect{Impacto en la calidad del aire en Rosario durante la quema de pastizales en el Delta del Rio de Paraná}{Agosto 2022}{-0.6}{https://rephip.unr.edu.ar/handle/2133/24201}{Reporte}
 
-  \proyect{\textbf{Impact on air quality in the Rosario city due to grassland burning in the Delta of Paraná River}}{August 2022}{-0.6}
-  \href{https://rephip.unr.edu.ar/handle/2133/24201}{\textbf{Report}}
+%\proyect{Estimación de los tiempos de exposición solar para obtener el tratamiento para la Psoriasis en CDMX}{Agosto 2020}{-2}{https://github.com/giovannilopez9808/Documents/raw/master/Posters/2020/CNF/TES/main.pdf}{Poster}
 
-  Through satellite's data provided by NASA and NOA's plataform. The fire alarms were measurement by the VIIRS satellite instrument. We process the number of fires that affected the region of Rosario and surrounding areas. We correlate this information with the suspended particles and the number of deaths in the same period of time.\\
+%\proyect{Análisis de la irradiancia UVA y eritemica en la Ciudad de México}{Octubre 2019}{-0.2}{https://github.com/giovannilopez9808/Documents/raw/master/Posters/2019/AFA/Analisis\%20indice\%20UV/Analisis\%20de\%20irradiancia.pdf}{Poster}
 
-  \proyect{Cloud classification with radiacion solar measurements.}{June 2022}{0}
-  \href{https://github.com/giovannilopez9808/Cloud_classification/raw/main/Document/Main.pdf}{\textbf{Report}}
+%\proyect{Análisis de la irradiancia solar con dos modelos de transferencia radiativa}{Agosto 2019}{0}{https://github.com/giovannilopez9808/Documents/raw/master/Posters/2019/CNF/Transferencia\%20radiativa/main.pdf}{Poster}
+%\end{multicols}
 
-  The cloud cover is an important characteristic to any type of weather forecasting. The solar radiation is a natural detector of clouds. In recent decades, a several types of models have been developed to classify different sky types according to cloud conditions or percentage cloud cover.
+\section{Educación}
 
-  \columnbreak
+\textbf{Licienciatura en Física} \\
+Universidad Autónoma de Nuevo León\\
+Nuevo León, Mexico.\\
 
-  \proyect{Estimation of solar exposure for Psoriasis treatment in Mexico city}{August 2020}{-0.2}
-  \href{https://github.com/giovannilopez9808/Documents/raw/master/Posters/2020/CNF/TES/main.pdf}{\textbf{Poster}}, \href{http://tes-v1.herokuapp.com/}{\textbf{Website}}
+\textbf{Maestria en Ciencias con Especialidad en Computación y Matemáticas Industriales}\\
+Centro de Investigación en Matemáticas\\
+Guanajuato, México
+%\begin{flushright}
+%\changefontsizes{12pt}
+%\textbf{Nota}:
 
-  Based on the measurements of erythemal radiation provided by the Environment Secretary of Mexico City, the solar exposure time was estimated for all the different phototypes and cloud conditions. The results were communicated to the Easter Dermatological Center. The patients can consult their treatment in a website.\\
-
-  \proyect{\textbf{Analysis of UVA and erythemic irradiances in Mexico City}}{October 2019}{-0.2}  \href{https://github.com/giovannilopez9808/Documents/raw/master/Posters/2019/AFA/Analisis%20indice%20UV/Analisis%20de%20irradiancia.pdf}{\textbf{Poster}}
-
-    With the ozone measurements from OMI-NASA instrument and the AOD from AERONET, we verified the ratios from TUV model results respect the surface measurements. This results was submitted in 104 Reunión de la Asociación Física Argentina.\\
-
-    \proyect{Analysis of solar irradiance with two transfer radiative models}{August 2019}{0}
-    \href{https://github.com/giovannilopez9808/Documents/raw/master/Posters/2019/CNF/Transferencia%20radiativa/main.pdf}{\textbf{Poster}}
-
-      The TUV model and the SMARTS model estimate the irradiance solar and solar spectre respectively. We analyzed the relativistic differences of the estimations for the Monterrey metropolitan area. The source codes of the two models were modified to read the values of the parameters from a database.\\
-
-
-      \section{Education}\\
-
-      \textbf{Bachelor of Science in Physics} \\
-      Universidad Autónoma de Nuevo León\\
-      Nuevo León, Mexico.\\
-
-      \textbf{Master's degree in computer science}\\
-      Centro de Investigación en Matemáticas\\
-      Guanajuato, México
-    \end{multicols}
-    \begin{flushleft}
-      \changefontsizes{10pt}
-      \textbf{Note}:
-
-      The words in blue color (article, report, poster and website) are hyperlinks.
-    \end{flushleft}
-    \end{document}
+%Las palabras en color azul (artículo, reporte y poster) son hipervinculos.
+%\end{flushright}
+\end{document}
