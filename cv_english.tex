@@ -2,91 +2,102 @@
 \usepackage[english]{babel}
 \usepackage{multicol}
 \usepackage{scrextend}
+\usepackage{tasks}
+\usepackage{amssymb}
+\settasks{
+	label-format={\color{linktext}\Large\bfseries},
+}
 \setlength{\columnsep}{1cm}
 \title{Gamaliel-Lopez-Padilla}
 \pagestyle{empty}
 \adcvname{}{M.Sc. Giovanni Gamaliel López Padilla}{}
 \adcvemail{giovannilopez9808}{gmail}{com}
 \adcvwebsite{https://giovannilopez9808.github.io/}{giovannilopez9808.github.io}
-\newcommand{\proyect}[5]{\begin{minipage}{1\linewidth}
-		\begin{minipage}{1\linewidth}
+\newcommand{\proyect}[3]{\begin{minipage}{1\linewidth}
+		\begin{minipage}{0.8\linewidth}
+			%\changefontsizes{17pt}
 			\textbf{#1}
 		\end{minipage}
-		%\begin{minipage}{0.19\linewidth}
-		%\begin{flushright}
-		%\vspace{#3cm}
-		%\textit{#2}
-		%\end{flushright}
-		%\end{minipage}
+		\begin{minipage}{0.19\linewidth}
+			\begin{flushright}
+				\vspace{#3cm}
+				\textit{#2}
+			\end{flushright}
+		\end{minipage}
 	\end{minipage}
-	\href{#4}{\textbf{#5}}
-	\vspace{-1cm}\\
+	\vspace{-0.9cm}
+}
+\newcommand{\libraries}[2]{
+	\begin{tasks}[
+			style=itemize,
+			after-item-skip=1mm
+		](#1)
+		#2
+	\end{tasks}
+	\vspace{-0.3cm}\\
 }
 \begin{document}
 \changefontsizes{16pt}
+\vspace{-0.5cm}
 \begin{flushleft}
-	Me gusta la ciencia y como la comunidad realiza  aportaciones con sus investigaciones para resolver algún problema usando resultados expuestos de otras personas para lograr sus objetivos. De la misma forma me gusta la filosofía del open source, donde las personas publican sus proyectos y cualquier persona puede aportar y usar sus avances.\\
+	I like science and how the community makes contributions with their research to solve a problem using other people's exposed results to achieve their goals. In the same way, I like the open source philosophy, where people publish their projects and anyone can contribute and use their advances.
 \end{flushleft}
+\section{Projects}\\
 
-\section{Projectos}\\
+\proyect{Daily UV Index forecast based on in situ measurements in the Monterrey Metropolitan Area.}{October 2023}{-0.65}
+\begin{flushleft}
+	Create a neural network model to obtain the UV index forecast for the next day based on in situ measurements and satellite data. Due to the results obtained in this study, a meeting was held with the Sistema Integral del Monitoreo Ambiental to agree on the implementation of the model in their system.
+\end{flushleft}
+\proyect{Segmentation of the capillary vessels of the eyes using the pix2pix model.}{December 2022}{0}
+\vspace{-0.3cm}
+\begin{flushleft}
+	A neural network model based on pix2pix architecture was developed in order to segment eye capillaries based on medical images. We were able to replicate the results presented in the original paper of the model and also improved its performance by adding a preprocessing to the given images.
+\end{flushleft}
+\proyect{Automatic detection of aggressive tweets}{October 2022}{-0.6}
+\vspace{-0.3cm}
+\begin{flushleft}
+	Based on the MEX-A3T dataset competition, I implemented a binary classification model that has the RoBERTuito Transformer architecture. The RoBERTuito weights model was obtained from Hugging Face API.
+\end{flushleft}
+\proyect{Classification of sky conditions based on global solar radiation measurements}{June 2022}{0}
+\vspace{-0.3cm}
+\begin{flushleft}
+	Implement a machine learning model based on multilayer perceptron, convolutional, and recurrent neural networks using tensorflow libraries to estimate the sky condition given a set of in situ measurements.
+\end{flushleft}
+\proyect{Ultraviolet Radiation Environment of a Tropical Megacity in Transition: Mexico City 2000–2019}{August 2021}{-0.5}
+\begin{flushleft}
+	I made an analysis of the trends of atmospheric pollutants using a perceptron neural network and moving averages. Due to the importance of the results presented, a meeting was held with the Secretary of the Environment of the CDMX and academic experts in the area.
+\end{flushleft}
+\proyect{Analysis of PM\textsubscript{10} and AOD\textsubscript{550nm} from VIS-NIR solar irradiance measurements in the Monterrey Metropolitan Area}{June 2020}{-0.6}
+\begin{flushleft}
+	I implemented a binary search algorithm in the SMARTS and TUV model source code to estimate the AOD\textsubscript{550nm} from PM\textsubscript{10} measurements from Monterrey, Mexico. Using a perceptron neural model, I analyzed the correlation between these atmospheric parameters.
+\end{flushleft}
+\proyect{Estimation of solar radiation exposure time in CDMX}{April 2019}{0}
+\vspace{-0.3cm}
+\begin{flushleft}
+	I estimate the solar radiation exposure time for all the phototypes in the CDMX over the year. These results were communicated to Dr. Ladislao de la Pascua Dermatology Center. Currently, this information can be accessed for all the patients from this center.
+\end{flushleft}
+\begin{minipage}{0.45\linewidth}
+	\section{Education}\\
 
-\proyect{Pronóstico diario de índice UV basado en mediciones in situ en el Área Metropolitana de Monterrey}{Octubre 2023}{-0.8}{https://raw.githubusercontent.com/giovannilopez9808/Documents/master/Tesis/main.pdf}{Documento}
-\begin{itemize}
-	\setlength\itemsep{0em}
-	\item Cree un modelo basado en redes neuronales para obtener el pronóstico del índice UV para las siguientes 24 horas basado en mediciones in situ y datos satelitales.
-	\item Debido a los resultados obtenidos en este estudio, se llevo acabo una reunión con el Sistema Integral del Monitoreo Ambiental para acordar la implementación del modelo en su sistema y comunicar sus estimaciones al público general.
-\end{itemize}
-\proyect{Clasificación de las condiciones del cielo por medio de mediciones de radiación solar global}{Junio 2022}{-0.8}{https://github.com/giovannilopez9808/Cloud_classification/raw/main/Document/Main.pdf}{Reporte}
-\begin{itemize}
-	\setlength\itemsep{0em}
-	\item Implemente un modelos basado en redes neuronales multicapa, convolucionales y recurrentes para estimar la condición del cielo dado un conjunto de mediciones in situ.
-\end{itemize}
-\proyect{Ultraviolet Radiation Environment of a Tropical Megacity in Transition: Mexico City 2000–2019}{Agosto 2021}{-0.6}{https://pubs.acs.org/doi/10.1021/acs.est.0c08515}{Artículo}
-\begin{itemize}
-	\setlength\itemsep{0em}
-	\item Realice un análisis en las tendencias de los contaminantes atmosféricos por medio de modelos de regresión lineal y medias móviles.
-	\item Debido a la importancia de los resultados expuestos, se realizó una reunión con la secretaria de medio ambiente de la CDMX y académicos expertos en el área.
-\end{itemize}
-\proyect{Detección autommática de tweets agresivos}{Agosto 2022}{-0.6}{https://github.com/giovannilopez9808/AgressiveDetectionMEXA3T}{Repositorio}
-\begin{itemize}
-	\setlength\itemsep{0em}
-	\item Con base en el conjunto de datos de la competencia, MEX-A3T implementé un modelo de clasificación binaria basado en la arquitectura Transformer. Los resultados obtenidos superan el rendimiento expuesto por los demás participantes.
-	\item  Al ser un proyecto con la filosofía open source, el código y la base de datos se encuentra disponible para un público general.
-\end{itemize}
-\proyect{Segmentación de las vasos capilares de los ojos por medio del modelo pix2pix.}{Agosto 2022}{-0.6}{https://raw.githubusercontent.com/giovannilopez9808/RetinaVesselNet/main/Document/Main.pdf}{Reporte}
-\begin{itemize}
-	\setlength\itemsep{0em}
-	\item Se desarrolló un modelo de redes neuronales basado en la arquitectura pix2pix con el fin de segmentar los vasos capilares de los ojos con base en imágenes médicas.
-	\item Se logró replicar los resultados expuestos en el artículo original del modelo y además se mejoró su rendimiento añadiendo un preprocesamiento a las imágenes dadas.
-\end{itemize}
-%\proyect{Análisis de los patrones de uso de la aplicación MiBici en el periodo 2015-2018}{Noviembre 2021}{-0.2}{https://raw.githubusercontent.com/giovannilopez9808/MiBici/main/Document/Main.pdf}{Reporte}
+	\textbf{Bachelor in Physics} \\
+	Universidad Autónoma de Nuevo León\\
+	Nuevo León, Mexico.\\
 
-%\proyect{Índice de marginacion en México dentro del periodo 2015-2020}{Octubre 2021}{-0.2}{https://raw.githubusercontent.com/giovannilopez9808/IndiceDeMarginacion2015_2020/main/Document/Main.pdf}{Reporte}
-
-%\proyect{Análisis de la radiación solar UV para la síntesis de Pre-Vitamina D en la piel en Rosario, Argentina}{Enero 2022}{-0.8}{https://anales.fisica.org.ar/journal/index.php/analesafa/article/view/2318}{Artículo}
-
-%\proyect{Impacto en la calidad del aire en Rosario durante la quema de pastizales en el Delta del Rio de Paraná}{Agosto 2022}{-0.6}{https://rephip.unr.edu.ar/handle/2133/24201}{Reporte}
-
-%\proyect{Estimación de los tiempos de exposición solar para obtener el tratamiento para la Psoriasis en CDMX}{Agosto 2020}{-2}{https://github.com/giovannilopez9808/Documents/raw/master/Posters/2020/CNF/TES/main.pdf}{Poster}
-
-%\proyect{Análisis de la irradiancia UVA y eritemica en la Ciudad de México}{Octubre 2019}{-0.2}{https://github.com/giovannilopez9808/Documents/raw/master/Posters/2019/AFA/Analisis\%20indice\%20UV/Analisis\%20de\%20irradiancia.pdf}{Poster}
-
-%\proyect{Análisis de la irradiancia solar con dos modelos de transferencia radiativa}{Agosto 2019}{0}{https://github.com/giovannilopez9808/Documents/raw/master/Posters/2019/CNF/Transferencia\%20radiativa/main.pdf}{Poster}
-%\end{multicols}
-
-\section{Educación}
-
-\textbf{Licienciatura en Física} \\
-Universidad Autónoma de Nuevo León\\
-Nuevo León, Mexico.\\
-
-\textbf{Maestria en Ciencias con Especialidad en Computación y Matemáticas Industriales}\\
-Centro de Investigación en Matemáticas\\
-Guanajuato, México
-%\begin{flushright}
-%\changefontsizes{12pt}
-%\textbf{Nota}:
-
-%Las palabras en color azul (artículo, reporte y poster) son hipervinculos.
-%\end{flushright}
+	\textbf{Master of Science with specialization in Computer Science and Industrial Mathematics}\\
+	Centro de Investigación en Matemáticas\\
+	Guanajuato, México
+\end{minipage}
+\begin{minipage}{0.55\linewidth}
+	\section{Skills}
+	\begin{itemize}
+		\item \textbf{Programming Language}:
+		      C, C++, Python, Fortran.
+		\item \textbf{Python libraries}:
+		      Tensorflow, Pytorch, Scikit-Learn, OpenCV, NTLK, Transformers, Numpy, Pandas.
+		\item \textbf{Cloud computing}:
+		      AWS, Google Cloud, GitHub. Cluster computing.
+		\item \textbf{Programming Strategies}:
+		      MLOps, Pipelines.
+	\end{itemize}
+\end{minipage}
 \end{document}

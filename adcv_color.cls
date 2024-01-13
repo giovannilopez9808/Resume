@@ -402,13 +402,10 @@
   \ifdefined\adcv@websiteurl%
     \ifx\adcv@websiteurl\empty%
       \def\adcv@website{}%
-<<<<<<< HEAD
     %\else%
       %\def\adcv@website{\houseicon~\href{\adcv@websiteurl}{\adcv@websitetext}}%
-=======
       \def\adcv@website{\houseicon~\href{\adcv@websiteurl}{\adcv@websitetext}}%
     \else%
->>>>>>> main
     \fi%
   \else%
     \def\adcv@website{}%
@@ -418,11 +415,8 @@
   \begin{center}
     \adcv@email \hspace{1cm}
     %\adcv@telephone \hspace{1cm}
-<<<<<<< HEAD
     %\adcv@website
-=======
     \adcv@website
->>>>>>> main
   \end{center}
 
 }
