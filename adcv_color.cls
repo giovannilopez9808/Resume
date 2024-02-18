@@ -345,9 +345,7 @@
 \def\@sectioncolor#1#2#3{{\addfontfeature{Color=linktext} #1#2#3}}
 \def\HyColor@@@@UseColor#1\@nil{\addfontfeatures{Color=linktext}}
 
-\renewcommand{\section}[1]{\vspace{.5\baselineskip}{\Large\bfseries\@sectioncolor #1}}
-\renewcommand{\subsection}[2]{\large\bfseries #2}
-
+\renewcommand{\section}[1]{\vspace{.5\baselineskip}{\Large\bfseries\@sectioncolor #1}\vspace{-0.5cm}}
 
 % Header
 
@@ -408,14 +406,15 @@
   \else%
     \def\adcv@website{}%
   \fi%
-  \changefontsizes{18pt}
-  \vspace{-1cm}
+  \changefontsizes{17pt}
+\vspace{-0.75cm}
   \begin{center}
+    \bfseries
     \adcv@email \hspace{1cm}
     %\adcv@telephone \hspace{1cm}
     \adcv@website
   \end{center}
-
+\vspace{-0.5cm}
 }
 
 % % Footer

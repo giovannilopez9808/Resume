@@ -313,19 +313,19 @@
 
 \RequirePackage{fontspec}
 
-\setmainfont[
-  Path = fonts/,
-  BoldFont = Roboto-Bold.ttf,
-  ItalicFont = Roboto-Italic.ttf,
-  BoldItalicFont = Roboto-BoldItalic.ttf,
-  Color=regulartext
-]{Roboto-Light.ttf}
+%\setmainfont[
+  %Path = fonts/,
+  %BoldFont = Roboto-Bold.ttf,
+  %ItalicFont = Roboto-Italic.ttf,
+  %BoldItalicFont = Roboto-BoldItalic.ttf,
+  %Color=regulartext
+%]{Roboto-Light.ttf}
 
-\newfontfamily\regular[Path = fonts/, Color=regulartext]{Roboto-Regular.ttf}
-\newfontfamily\light[Path = fonts/, Color=regulartext]{Roboto-Light.ttf}
-\newfontfamily\thin[Path = fonts/, Color=regulartext]{Roboto-Thin.ttf}
-\newfontfamily\regularheader[Path = fonts/, Color=headertext]{Roboto-Regular.ttf}
-\newfontfamily\thinheader[Path = fonts/, Color=headertext]{Roboto-Thin.ttf}
+%\newfontfamily\regular[Path = fonts/, Color=regulartext]{Roboto-Regular.ttf}
+%\newfontfamily\light[Path = fonts/, Color=regulartext]{Roboto-Light.ttf}
+%\newfontfamily\thin[Path = fonts/, Color=regulartext]{Roboto-Thin.ttf}
+%\newfontfamily\regularheader[Path = fonts/, Color=headertext]{Roboto-Regular.ttf}
+%\newfontfamily\thinheader[Path = fonts/, Color=headertext]{Roboto-Thin.ttf}
 
 \newcommand*{\lighttext}{\addfontfeature{Color=lighttext}}
 \newcommand*{\linktext}{\addfontfeature{Color=linktext}}
