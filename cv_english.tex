@@ -13,19 +13,10 @@
 \adcvname{}{M.Sc. Giovanni Gamaliel López Padilla}{}
 \adcvemail{giovannilopez9808}{gmail}{com}
 \adcvwebsite{https://giovannilopez9808.github.io/}{giovannilopez9808.github.io}
-\newcommand{\proyect}[3]{\begin{minipage}{1\linewidth}
-		\begin{minipage}{0.8\linewidth}
-			%\changefontsizes{17pt}
-			\textbf{#1}
-		\end{minipage}
-		\begin{minipage}{0.19\linewidth}
-			\begin{flushright}
-				\vspace{#3cm}
-				\textit{#2}
-			\end{flushright}
-		\end{minipage}
-	\end{minipage}
-	\vspace{-0.9cm}
+\newcommand{\proyect}[2]{
+	\textbf{#2}\\
+	{\color{linktext}	\textbf {#1}}
+	\vspace{-1cm}\\
 }
 \newcommand{\libraries}[2]{
 	\begin{tasks}[
@@ -44,42 +35,48 @@
 \end{flushleft}
 \section{Projects}\\
 
-\proyect{Daily UV Index forecast based on in situ measurements in the Monterrey Metropolitan Area.}{October 2023}{-0.65}
-\begin{flushleft}
-	Create a neural network model to obtain the UV index forecast for the next day based on in situ measurements and satellite data. Due to the results obtained in this study, a meeting was held with the Sistema Integral del Monitoreo Ambiental to agree on the implementation of the model in their system.
-\end{flushleft}
-\proyect{Segmentation of the capillary vessels of the eyes using the pix2pix model.}{December 2022}{0}
-\vspace{-0.3cm}
-\begin{flushleft}
-	A neural network model based on pix2pix architecture was developed in order to segment eye capillaries based on medical images. We were able to replicate the results presented in the original paper of the model and also improved its performance by adding a preprocessing to the given images.
-\end{flushleft}
-\proyect{Automatic detection of aggressive tweets}{October 2022}{-0.6}
-\vspace{-0.3cm}
-\begin{flushleft}
-	Based on the MEX-A3T dataset competition, I implemented a binary classification model that has the RoBERTuito Transformer architecture. The RoBERTuito weights model was obtained from Hugging Face API.
-\end{flushleft}
-\proyect{Classification of sky conditions based on global solar radiation measurements}{June 2022}{0}
-\vspace{-0.3cm}
-\begin{flushleft}
-	Implement a machine learning model based on multilayer perceptron, convolutional, and recurrent neural networks using tensorflow libraries to estimate the sky condition given a set of in situ measurements.
-\end{flushleft}
-\proyect{Ultraviolet Radiation Environment of a Tropical Megacity in Transition: Mexico City 2000–2019}{August 2021}{-0.5}
-\begin{flushleft}
-	I made an analysis of the trends of atmospheric pollutants using a perceptron neural network and moving averages. Due to the importance of the results presented, a meeting was held with the Secretary of the Environment of the CDMX and academic experts in the area.
-\end{flushleft}
-\proyect{Analysis of PM\textsubscript{10} and AOD\textsubscript{550nm} from VIS-NIR solar irradiance measurements in the Monterrey Metropolitan Area}{June 2020}{-0.6}
-\begin{flushleft}
-	I implemented a binary search algorithm in the SMARTS and TUV model source code to estimate the AOD\textsubscript{550nm} from PM\textsubscript{10} measurements from Monterrey, Mexico. Using a perceptron neural model, I analyzed the correlation between these atmospheric parameters.
-\end{flushleft}
-\proyect{Estimation of solar radiation exposure time in CDMX}{April 2019}{0}
-\vspace{-0.3cm}
-\begin{flushleft}
-	I estimate the solar radiation exposure time for all the phototypes in the CDMX over the year. These results were communicated to Dr. Ladislao de la Pascua Dermatology Center. Currently, this information can be accessed for all the patients from this center.
-\end{flushleft}
-\begin{minipage}{0.45\linewidth}
+\proyect{Machine Learning Engineer, Data Science}{Daily UV Index forecast based on in situ measurements in the Monterrey Metropolitan Area.}
+\begin{itemize}
+	\setlength\itemsep{0em}
+	\item I create a neural network model to forecast the UV index for the next day based on in situ measurements and satellite data.
+	\item Due to the results obtained in this study, a meeting was held with the Sistema Integral del Monitoreo Ambiental to agree on the implementation of the model in their system.
+\end{itemize}
+\proyect{Machine Learning Engineer, Data Science}{Segmentation of the capillary vessels of the eyes using the pix2pix model.}
+\begin{itemize}
+	\setlength\itemsep{0em}
+	\item I design a neural network model based on pix2pix architecture in order to segment eye capillaries trained with medical images. 
+		\item The model was able to replicate the results presented in the original paper of the model and also improved its performance by adding a preprocessing to the given images.
+\end{itemize}
+\proyect{Machine Learning Engineer}{Automatic detection of aggressive tweet}
+\begin{itemize}
+	\setlength\itemsep{0em}
+	\item In the context of the MEX-A3T competition, I implemented a binary classification model that has the RoBERTuito Transformer architecture. The RoBERTuito weights model was obtained from Hugging Face API and trained using a fine tuning technique.
+\end{itemize}
+\proyect{Intern Machine Learning Developer}{Classification of sky conditions based on global solar radiation measurements}
+\vspace{-0.1cm}
+\begin{itemize}
+	\setlength\itemsep{0em}
+	\item I implement a machine learning model based on multilayer perceptron, convolutional, and recurrent neural layers using tensorflow libraries to estimate the sky condition given a set of in situ measurements.
+\end{itemize}
+\proyect{Data science, Data Analyst}{Ultraviolet Radiation Environment of a Tropical Megacity in Transition: Mexico City 2000–2019}
+\begin{itemize}
+	\setlength\itemsep{0em}
+	\item I made an analysis of the trends of atmospheric pollutants using a perceptron neural network and moving averages. Due to the importance of the results presented, a meeting was held with the Secretary of the Environment of the CDMX and academic experts in the area.
+\end{itemize}
+%\proyect{Data science, Data Analyst}{Analysis of PM\textsubscript{10} and AOD\textsubscript{550nm} from VIS-NIR solar irradiance measurements in the Monterrey Metropolitan Area}
+%\begin{itemize}
+	%\setlength\itemsep{0em}
+	%\item I implemented a binary search algorithm in the SMARTS and TUV model source code to estimate the AOD\textsubscript{550nm} from PM\textsubscript{10} measurements from Monterrey, Mexico. Using a perceptron neural model, I analyzed the correlation between these atmospheric parameters.
+%\end{itemize}
+%\proyect{Data Analyst, Data science}{Estimation of solar radiation exposure time in CDMX}
+%\begin{itemize}
+	%\setlength\itemsep{0em}
+	%\item I estimate the solar radiation exposure time for all the phototypes in the CDMX over the year. These results were communicated to Dr. Ladislao de la Pascua Dermatology Center. Currently, this information can be accessed for all the patients from this center.
+%\end{itemize}
+\begin{minipage}{0.38\linewidth}
 	\section{Education}\\
 
-	\textbf{Bachelor in Physics} \\
+	\textbf{Bachelor in physiscs}\\
 	Universidad Autónoma de Nuevo León\\
 	Nuevo León, Mexico.\\
 
@@ -87,17 +84,21 @@
 	Centro de Investigación en Matemáticas\\
 	Guanajuato, México
 \end{minipage}
-\begin{minipage}{0.55\linewidth}
-	\section{Skills}
+\begin{minipage}{0.62\linewidth}
+	\section{Habilities and knowledge}
 	\begin{itemize}
-		\item \textbf{Programming Language}:
-		      C, C++, Python, Fortran.
+		\setlength\itemsep{0em}
+		\item \textbf{Languages}: English (B2), spanish (Nativo).
+		\item \textbf{Soft skills}:
+			Comunication, creativity, critical thinking.
+		\item \textbf{Programing languages}:
+		      R, C, C++, Python, Fortran, Java.
 		\item \textbf{Python libraries}:
 		      Tensorflow, Pytorch, Scikit-Learn, OpenCV, NTLK, Transformers, Numpy, Pandas.
-		\item \textbf{Cloud computing}:
+		\item \textbf{Cloud servicies}:
 		      AWS, Google Cloud, GitHub. Cluster computing.
-		\item \textbf{Programming Strategies}:
-		      MLOps, Pipelines.
+		\item \textbf{Tools}:
+		      SQL, Git, GitHub, Linux, Power Bi, ETL.
 	\end{itemize}
 \end{minipage}
 \end{document}

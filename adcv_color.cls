@@ -413,10 +413,10 @@
   \changefontsizes{18pt}
   \vspace{-1cm}
   \begin{center}
-    \adcv@email \hspace{1cm}
+    \textbf{\adcv@email} \hspace{1cm}
     %\adcv@telephone \hspace{1cm}
     %\adcv@website
-    \adcv@website
+    \textbf{\adcv@website}
   \end{center}
 
 }
