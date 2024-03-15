@@ -380,7 +380,7 @@
 \else
   \def\adcv@address{\placeicon~\adcv@street,~\adcv@postalcode~\adcv@locality,~\adcv@country}
   \def\adcv@email{\envelopeicon~\href{mailto:\adcv@emaillocal @\adcv@emaildomainsecond.\adcv@emaildomaintop}{\adcv@emaillocal @\adcv@emaildomainsecond.\adcv@emaildomaintop}}
-  \def\adcv@telephone{\phoneicon~\adcv@phone}
+  \def\adcv@telephone{\phoneicon~\textcolor{linktext}{\adcv@phone}}
 \fi
 
 \AtBeginDocument{%
@@ -411,7 +411,7 @@
   \begin{center}
     \bfseries
     \adcv@email \hspace{1cm}
-    %\adcv@telephone \hspace{1cm}
+    \adcv@telephone \hspace{1cm}
     \adcv@website
   \end{center}
 \vspace{-0.5cm}
