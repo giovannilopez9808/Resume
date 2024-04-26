@@ -333,10 +333,22 @@
   Color=regulartext
 ]{Roboto-Light.ttf}
 
-\newfontfamily\regular[Path = fonts/, Color=regulartext]{Roboto-Regular.ttf}
-\newfontfamily\light[Path = fonts/, Color=regulartext]{Roboto-Light.ttf}
-\newfontfamily\thin[Path = fonts/, Color=regulartext]{Roboto-Thin.ttf}
-\newfontfamily\regularheader[Path = fonts/, Color=headertext]{Roboto-Regular.ttf}
+\newfontfamily\regular[
+Path = fonts/,
+Color=regulartext
+]{Roboto-Regular.ttf}
+\newfontfamily\light[
+Path = fonts/, 
+Color=regulartext
+]{Roboto-Light.ttf}
+\newfontfamily\thin[
+Path = fonts/, 
+Color=regulartext
+]{Roboto-Thin.ttf}
+\newfontfamily\regularheader[
+Path = fonts/,
+Color=linktext,
+]{Roboto-Bold.ttf}
 \newfontfamily\thinheader[Path = fonts/, Color=headertext]{Roboto-Thin.ttf}
 
 \newcommand*{\lighttext}{\addfontfeature{Color=lighttext}}
@@ -347,17 +359,32 @@
 
 \renewcommand{\section}[1]{\vspace{.5\baselineskip}{\Large\bfseries\@sectioncolor #1}\vspace{-0.5cm}}
 
+\renewcommand{\subsection}[1]{{\bfseries #1}\vspace{-0.5cm}}
+
 % Header
 
 \RequirePackage{tikz}
 
-\newcommand*{\adcvname}[3]{\def\adcv@firstname{#1}\def\adcv@lastname{#2}\def\adcv@degree{#3}}
-\newcommand*{\adcvtitle}[1]{\def\adcv@title{#1}}
-\newcommand*{\adcvaddress}[4]{\def\adcv@street{#1}\def\adcv@postalcode{#2}\def\adcv@locality{#3}\def\adcv@country{#4}}
-\newcommand*{\adcvphone}[1]{\def\adcv@phone{#1}}
-\newcommand*{\adcvemail}[3]{\def\adcv@emaillocal{#1}\def\adcv@emaildomainsecond{#2}\def\adcv@emaildomaintop{#3}}
+\newcommand*{\adcvname}[3]{
+\def\adcv@firstname{#1}\def\adcv@lastname{#2}\def\adcv@degree{#3}
+}
+\newcommand*{\adcvtitle}[1]{
+\def\adcv@title{#1}
+}
+\newcommand*{\adcvaddress}[4]{
+\def\adcv@street{#1}\def\adcv@postalcode{#2}\def\adcv@locality{#3}\def\adcv@country{#4}
+}
+\newcommand*{\adcvphone}[1]{
+\def\adcv@phone{#1}
+}
+\newcommand*{\adcvemail}[3]{
+\def\adcv@emaillocal{#1}\def\adcv@emaildomainsecond{#2}\def\adcv@emaildomaintop{#3}
+}
 \newcommand*{\adcvwebsite}[2]{\def\adcv@websiteurl{#1}\def\adcv@websitetext{#2}}
+\newcommand*{\adcvgithub}[2]{\def\adcv@githuburl{#1}\def\adcv@githubtext{#2}}
+\newcommand*{\adcvlinkedin}[2]{\def\adcv@linkedinurl{#1}\def\adcv@linkedintext{#2}}
 \graphicspath{{icons/}}
+
 
 \ifprint
   \newcommand*{\aticon}{\includegraphics[height=0.75em]{at_print.png}}
@@ -372,6 +399,8 @@
 \newcommand*{\houseicon}{\includegraphics[height=0.75em]{house.pdf}}
 \newcommand*{\phoneicon}{\includegraphics[height=0.75em]{phone.pdf}}
 \newcommand*{\placeicon}{\includegraphics[height=0.75em]{place.pdf}}
+\newcommand*{\githubicon}{\includegraphics[height=0.75em]{github.pdf}}
+\newcommand*{\linkedinicon}{\includegraphics[height=0.75em]{linkedin.png}}
 
 \ifonline
   \def\adcv@address{\placeicon~\adcv@locality,~\adcv@country}
@@ -384,36 +413,53 @@
 \fi
 
 \AtBeginDocument{%
+\begin{minipage}{0.6\linewidth}
   \begin{tikzpicture}[remember picture, overlay]%
-    \node [rectangle, fill=headerfill, minimum width=\paperwidth, minimum height=5em, anchor=north] (box) at (current page.north) {};%
-    \node [text=headertext, anchor=center] (name) at (box) {%
-      {\Huge\regularheader \adcv@degree \hspace{0.2cm} \adcv@lastname \adcv@firstname}%
-    };%
-    % \node [text=headertext, anchor=north] at (name.south) {%
-    %   \Large\thinheader\adcv@title%
-    % };%
+    %\node [rectangle, fill=headerfill, minimum width=\paperwidth, minimum height=5em, anchor=north] (box) at (current page.north) {};%
+    \node [
+      align=left,
+      %text=headertext,
+      %anchor=center
+      ] (name) at (6.25,0.5)
+      {
+        \Huge \regularheader
+        \adcv@firstname\hspace{0.2cm}\adcv@lastname\\
+        \vspace{0.5cm}
+        \Large \center \regularheader
+      \adcv@degree 
+    };
   \end{tikzpicture}%
-
-  %\vspace{\baselineskip}%
-
-  \def\adcv@website{\houseicon~\href{\adcv@websiteurl}{\adcv@websitetext}}%
+\end{minipage}
+\begin{minipage}{0.4\linewidth}
+  \vspace{-0.5cm}
+  \def\adcv@website{
+  \houseicon~\href{\adcv@websiteurl}{\adcv@websitetext}
+}%
+  \def\adcv@github{
+    \githubicon~\href{\adcv@githuburl}{\adcv@githubtext}
+}
+  \def\adcv@linkedin{
+    \linkedinicon~\href{\adcv@linkedinurl}{\adcv@linkedintext}
+}
   \ifdefined\adcv@websiteurl%
     \ifx\adcv@websiteurl\empty%
       \def\adcv@website{}%
-      \def\adcv@website{\houseicon~\href{\adcv@websiteurl}{\adcv@websitetext}}%
+      \def\adcv@website{
+      \houseicon~\href{\adcv@websiteurl}{\adcv@websitetext}
+    }%%
     \else%
     \fi%
   \else%
-    \def\adcv@website{}%
   \fi%
-  \changefontsizes{17pt}
-\vspace{-0.75cm}
-  \begin{center}
+  \changefontsizes{16pt}
+  \begin{flushright}
     \bfseries
-    \adcv@email \hspace{1cm}
-    \adcv@telephone \hspace{1cm}
+    \adcv@email
     \adcv@website
-  \end{center}
+    %\adcv@github
+    \adcv@telephone
+  \end{flushright}
+\end{minipage}
 \vspace{-0.5cm}
 }
 
