@@ -2,103 +2,113 @@
 \usepackage[english]{babel}
 \usepackage{multicol}
 \usepackage{scrextend}
-\usepackage{tasks}
-\usepackage{amssymb}
-\settasks{
-	label-format={\color{linktext}\Large\bfseries},
-}
-\setlength{\columnsep}{1cm}
+\setlength\itemsep{0em}
 \title{Gamaliel-Lopez-Padilla}
 \pagestyle{empty}
-\adcvname{}{M.Sc. Giovanni Gamaliel López Padilla}{}
+\adcvname{Giovanni Gamaliel}{López Padilla}{Machine Learning Engineer | Data Scientist | Statistican}
 \adcvemail{giovannilopez9808}{gmail}{com}
+\adcvphone{8712783770}
 \adcvwebsite{https://giovannilopez9808.github.io/}{giovannilopez9808.github.io}
-\newcommand{\proyect}[2]{
-	\textbf{#2}\\
-	{\color{linktext}	\textbf {#1}}
-	\vspace{-1cm}\\
-}
-\newcommand{\libraries}[2]{
-	\begin{tasks}[
-			style=itemize,
-			after-item-skip=1mm
-		](#1)
-		#2
-	\end{tasks}
-	\vspace{-0.3cm}\\
+\adcvgithub{https://github.com/giovannilopez9808/}{giovannilopez9808}
+\adcvlinkedin{https://github.com/giovannilopez9808/}{giovannilopez9808}
+\newcommand{\work}[3]{
+	\begin{minipage}{0.75\linewidth}
+		\textbf{#1} | #2
+	\end{minipage}
+	\begin{minipage}{0.25\linewidth}
+		\begin{flushright}
+			\textit{#3}
+		\end{flushright}
+	\end{minipage}
+	\vspace{-1cm}
 }
 \begin{document}
-\changefontsizes{16pt}
-\vspace{-0.5cm}
-\begin{flushleft}
-	I like science and how the community makes contributions with their research to solve a problem using other people's exposed results to achieve their goals. In the same way, I like the open source philosophy, where people publish their projects and anyone can contribute and use their advances.
-\end{flushleft}
+\changefontsizes{14pt}
+\section{Profile}\\
+\begin{addmargin}[0.5em]{0.2em}
+	\begin{flushleft}
+		I like science and how the community makes contributions with their research to solve a problem, using other people's exposed results to achieve their goals. In the same way, I like the open source philosophy, where people publish their projects and anyone can contribute and use their advances.
+	\end{flushleft}
+\end{addmargin}
+\section{Experiene}\\
+\begin{addmargin}[0.5em]{0.5em}
+	\work{Machine Learning Engineer}{CIMAT}{August 2021 - June 2023}
+	\begin{itemize}
+		\item  I developed several models based on machine learning and deep learning using Python libraries such as scikit-learn, TensorFlow, PyTorch and NumPy.
+		\item Design pipelines to manage the operation, training and validation of neural network models on a local network and cloud services such as AWS.
+	\end{itemize}
+	\work{Data Analyst}{UANL}{August 2018 - July 2021}
+	\begin{itemize}
+		\item I made some research and analysis of data related to solar radiation, atmospheric components and geolocation collected by meteorological stations and satellite estimates.
+		\item These projects had been published in international articles, congresses and letters for public. The results obtained were presented to other experts to take some actions in the regularization of pollutant emissions into the atmosphere at CDMX and Monterrey.
+	\end{itemize}
+\end{addmargin}
 \section{Projects}\\
-
-\proyect{Machine Learning Engineer, Data Science}{Daily UV Index forecast based on in situ measurements in the Monterrey Metropolitan Area.}
-\begin{itemize}
-	\setlength\itemsep{0em}
-	\item I create a neural network model to forecast the UV index for the next day based on in situ measurements and satellite data.
-	\item Due to the results obtained in this study, a meeting was held with the Sistema Integral del Monitoreo Ambiental to agree on the implementation of the model in their system.
-\end{itemize}
-\proyect{Machine Learning Engineer, Data Science}{Segmentation of the capillary vessels of the eyes using the pix2pix model.}
-\begin{itemize}
-	\setlength\itemsep{0em}
-	\item I design a neural network model based on pix2pix architecture in order to segment eye capillaries trained with medical images. 
+\begin{addmargin}[0.5em]{0.5em}
+	\subsection{Daily UV Index forecast based on in situ measurements in the Monterrey Metropolitan Area}
+	\begin{itemize}
+		\item I create a neural network model to forecast the UV index for the next day based on in situ measurements and satellite data.
+		\item Due to the results obtained in this study, a meeting was held with the Sistema Integral del Monitoreo Ambiental to agree on the implementation of the model in their system.
+	\end{itemize}
+	\subsection{Segmentation of the capillary vessels of the eyes using the pix2pix model}
+	\begin{itemize}
+		\item I design a neural network model based on pix2pix architecture in order to segment eye capillaries trained with medical images.
 		\item The model was able to replicate the results presented in the original paper of the model and also improved its performance by adding a preprocessing to the given images.
-\end{itemize}
-\proyect{Machine Learning Engineer}{Automatic detection of aggressive tweet}
-\begin{itemize}
-	\setlength\itemsep{0em}
-	\item In the context of the MEX-A3T competition, I implemented a binary classification model that has the RoBERTuito Transformer architecture. The RoBERTuito weights model was obtained from Hugging Face API and trained using a fine tuning technique.
-\end{itemize}
-\proyect{Intern Machine Learning Developer}{Classification of sky conditions based on global solar radiation measurements}
-\vspace{-0.1cm}
-\begin{itemize}
-	\setlength\itemsep{0em}
-	\item I implement a machine learning model based on multilayer perceptron, convolutional, and recurrent neural layers using tensorflow libraries to estimate the sky condition given a set of in situ measurements.
-\end{itemize}
-\proyect{Data science, Data Analyst}{Ultraviolet Radiation Environment of a Tropical Megacity in Transition: Mexico City 2000–2019}
-\begin{itemize}
-	\setlength\itemsep{0em}
-	\item I made an analysis of the trends of atmospheric pollutants using a perceptron neural network and moving averages. Due to the importance of the results presented, a meeting was held with the Secretary of the Environment of the CDMX and academic experts in the area.
-\end{itemize}
-%\proyect{Data science, Data Analyst}{Analysis of PM\textsubscript{10} and AOD\textsubscript{550nm} from VIS-NIR solar irradiance measurements in the Monterrey Metropolitan Area}
-%\begin{itemize}
+	\end{itemize}
+	\subsection{Automatic detection of aggressive tweet}
+	\begin{itemize}
+		\item In the context of the MEX-A3T competition, I implemented a binary classification model that has the RoBERTuito Transformer architecture. The RoBERTuito weights model was obtained from Hugging Face API and trained using a fine tuning technique.
+	\end{itemize}
+	\subsection{Classification of sky conditions based on global solar radiation measurements}
+	\begin{itemize}
+		\item I implement a machine learning model based on multilayer perceptron, convolutional, and recurrent neural layers using tensorflow libraries to estimate the sky condition given a set of in situ measurements.
+	\end{itemize}
+	\subsection{Ultraviolet Radiation Environment of a Tropical Megacity in Transition: Mexico City 2000–2019}
+	\begin{itemize}
+		\item I made an analysis of the trends of atmospheric pollutants using a perceptron neural network and moving averages. Due to the importance of the results presented, a meeting was held with the Secretary of the Environment of the CDMX and academic experts in the area.
+	\end{itemize}
+	%\proyect{Data science, Data Analyst}{Analysis of PM\textsubscript{10} and AOD\textsubscript{550nm} from VIS-NIR solar irradiance measurements in the Monterrey Metropolitan Area}
+	%\begin{itemize}
 	%\setlength\itemsep{0em}
 	%\item I implemented a binary search algorithm in the SMARTS and TUV model source code to estimate the AOD\textsubscript{550nm} from PM\textsubscript{10} measurements from Monterrey, Mexico. Using a perceptron neural model, I analyzed the correlation between these atmospheric parameters.
-%\end{itemize}
-%\proyect{Data Analyst, Data science}{Estimation of solar radiation exposure time in CDMX}
-%\begin{itemize}
+	%\end{itemize}
+	%\proyect{Data Analyst, Data science}{Estimation of solar radiation exposure time in CDMX}
+	%\begin{itemize}
 	%\setlength\itemsep{0em}
 	%\item I estimate the solar radiation exposure time for all the phototypes in the CDMX over the year. These results were communicated to Dr. Ladislao de la Pascua Dermatology Center. Currently, this information can be accessed for all the patients from this center.
-%\end{itemize}
-\begin{minipage}{0.38\linewidth}
+	%\end{itemize}
+\end{addmargin}
+\begin{minipage}{0.35\linewidth}
 	\section{Education}\\
+	\begin{addmargin}[0.5em]{0.5em}
 
-	\textbf{Bachelor in physiscs}\\
-	Universidad Autónoma de Nuevo León\\
-	Nuevo León, Mexico.\\
+		\textbf{Bachelor in physiscs}\\
+		Universidad Autónoma de Nuevo León\\
+		Nuevo León, Mexico.\\
 
-	\textbf{Master of Science with specialization in Computer Science and Industrial Mathematics}\\
-	Centro de Investigación en Matemáticas\\
-	Guanajuato, México
+		\textbf{Master of Science with specialization in Computer Science and Industrial Mathematics}\\
+		Centro de Investigación en Matemáticas\\
+		Guanajuato, México
+	\end{addmargin}
 \end{minipage}
-\begin{minipage}{0.62\linewidth}
-	\section{Habilities and knowledge}
-	\begin{itemize}
-		\setlength\itemsep{0em}
-		\item \textbf{Languages}: English (B2), spanish (Nativo).
-		\item \textbf{Soft skills}:
-			Comunication, creativity, critical thinking.
-		\item \textbf{Programing languages}:
-		      R, C, C++, Python, Fortran, Java.
-		\item \textbf{Python libraries}:
-		      Tensorflow, Pytorch, Scikit-Learn, OpenCV, NTLK, Transformers, Numpy, Pandas.
-		\item \textbf{Cloud servicies}:
-		      AWS, Google Cloud, GitHub. Cluster computing.
-		\item \textbf{Tools}:
-		      SQL, Git, GitHub, Linux, Power Bi, ETL.
-	\end{itemize}
+\begin{minipage}{0.65\linewidth}
+	\begin{addmargin}[0.5em]{0.5em}
+		\section{Habilities and knowledge}
+
+		\begin{itemize}
+			\setlength\itemsep{0em}
+			\item \textbf{Languages}: English (B2), spanish (Nativo).
+			\item \textbf{Soft skills}:
+				Comunication, creativity, critical thinking.
+			\item \textbf{Programing languages}:
+				R, C, C++, Python, Fortran, Java.
+			\item \textbf{Python libraries}:
+				Tensorflow, Pytorch, Scikit-Learn, OpenCV, NTLK, Transformers, Numpy, Pandas.
+			\item \textbf{Cloud servicies}:
+				AWS, Google Cloud, GitHub. Cluster computing.
+			\item \textbf{Tools}:
+				SQL, Git, GitHub, Linux, Power Bi, ETL.
+		\end{itemize}
+	\end{addmargin}
 \end{minipage}
 \end{document}
